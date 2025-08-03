@@ -24,7 +24,7 @@ function Buttons() {
 
     const goBack = () => {
         setButtonArea('symptoms')
-        setAnswerArea('Hausa text are pronounces exactly as they are written')
+        setAnswerArea('Hausa text are pronounced exactly as they are written')
     }
 
     let goBackButton = 
