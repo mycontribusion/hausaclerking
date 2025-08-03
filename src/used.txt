@@ -1,0 +1,47 @@
+ /*const butonArray = [
+        ['ni' , 'i',],
+        ['kai', 'you']
+    ]*/
+
+    /*const butonObj = [
+        {
+            id : 1,
+            hausa : 'Gaishe-Gaishe',
+            eng : 'greetings'
+        },
+        {
+            id : 2,
+            hausa : 'suna da bayanan mara lafiya',
+            eng : 'biodata'
+        },
+        {
+            id : 3,
+            hausa : 'Gaishe-Gaishe',
+            eng : 'fever'
+        },
+        {
+            id : 4,
+            hausa : 'suna da bayanan mara lafiya',
+            eng : 'cough'
+        },
+        {
+            id : 5,
+            hausa : 'Gaishe-Gaishe',
+            eng : 'pain'
+        },
+        {
+            id : 6,
+            hausa : 'suna da bayanan mara lafiya',
+            eng : 'swelling'
+        },
+        {
+            id : 7,
+            hausa : 'Gaishe-Gaishe',
+            eng : 'palpitation'
+        },
+        {
+            id : 8,
+            hausa : 'suna da bayanan mara lafiya',
+            eng : 'jaundice'
+        }
+    ]*/

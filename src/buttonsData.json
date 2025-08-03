@@ -1,0 +1,202 @@
+
+
+[
+    {
+        "id": 1,
+        "hausa": "Gaishe-Gaishe",
+        "eng": "greetings",
+        "questions": [
+            {
+                "id" : 1.1,
+                "hausa" : "sannu ya ya jiki?",
+                "eng" : "sorry how are you feeling?"
+            },
+            {
+                "id" : 1.2,
+                "hausa" : "Allah Ya kara sauki",
+                "eng" : "May Allah increase you in health"
+            }        
+        ]},
+    {
+        "id": 2,
+        "hausa": "suna da bayanan mara lafiya",
+        "eng": "biodata",
+        "questions": [
+            {
+                "id" : 2.1,
+                "hausa" : "meye suna?",
+                "eng" : "what is your name?"
+            },
+            {
+                "id" : 2.2,
+                "hausa" : "nawa shekaru?",
+                "eng" : "how old are you?"
+            },
+            {
+                "id" : 2.3,
+                "hausa" : "meye aiki?",
+                "eng" : "what is your job?"
+            },
+            {
+                "id" : 2.4,
+                "hausa" : "ina ne gurin zama?",
+                "eng" : "where do you live?"
+            }]
+    },
+    {
+        "id": 3,
+        "hausa": "Zazzaɓi",
+        "eng": "fever",
+        "questions": [
+            {
+                "id" : 3.1,
+                "hausa" : "akwai zazzabi?",
+                "eng" : "do you have fever?"
+            },
+            {
+                "id" : 3.2,
+                "hausa" : "yawshe zazaabin ya fara",
+                "eng" : "when did the fever started?"
+            },
+            {
+                "id" : 3.3,
+                "hausa" : "jikin, da zafi sosai?",
+                "eng" : "is the fever high?"
+            },
+            {
+                "id" : 3.4,
+                "hausa" : "ko ba zafi sosai?",
+                "eng" : "is the fever low?"
+            }]
+    },
+    {
+        "id": 4,
+        "hausa": "Tari",
+        "eng": "cough",
+        "questions": [
+            {
+                "id" : 4.1,
+                "hausa" : "akwai tari?",
+                "eng" : "do you have cough?"
+            },
+            {
+                "id" : 4.2,
+                "hausa" : "yawshe tarin ya fara",
+                "eng" : "when did the cough started?"
+            },
+            {
+                "id" : 4.3,
+                "hausa" : "akwai kaki?",
+                "eng" : "is it productive?"
+            },
+            {
+                "id" : 4.4,
+                "hausa" : "meye kalar kakin?",
+                "eng" : "what is the colour of the sputum?"
+            }]
+    },
+    {
+        "id": 5,
+        "hausa": "Ciwo",
+        "eng": "pain",
+        "questions": [
+            {
+                "id" : 5.1,
+                "hausa" : "akwai ciwo?",
+                "eng" : "do you feel pain?"
+            },
+            {
+                "id" : 5.2,
+                "hausa" : "nuna min inda ciwon yake",
+                "eng" : "show me where the pain is"
+            },
+            {
+                "id" : 5.3,
+                "hausa" : "ciwon sosai ne?",
+                "eng" : "is the pain severe"
+            },
+            {
+                "id" : 5.4,
+                "hausa" : "ciwon kadan kadanne?",
+                "eng" : "is the pain mild?"
+            }]
+    },
+    {
+        "id": 6,
+        "hausa": "Kumburi",
+        "eng": "swelling",
+        "questions": [
+            {
+                "id" : 6.1,
+                "hausa" : "akwai kumburi?",
+                "eng" : "do you have any swelling??"
+            },
+            {
+                "id" : 6.2,
+                "hausa" : "nunamin inda kumburin yake",
+                "eng" : "show me where the swelling is"
+            },
+            {
+                "id" : 6.3,
+                "hausa" : "tun yawshe kumburin ya fara?",
+                "eng" : "when did the swelling started?"
+            },
+            {
+                "id" : 6.4,
+                "hausa" : "ya kai girman haka?",
+                "eng" : "is it upto this size?"
+            }]
+    },
+    {
+        "id": 7,
+        "hausa": "zuciya",
+        "eng": "cvs",
+        "questions": [
+            {
+                "id" : 7.1,
+                "hausa" : "akwai faduwar gaba, zuciya na dub dub dub?",
+                "eng" : "is there palpitation?"
+            },
+            {
+                "id" : 7.2,
+                "hausa" : "akwai ciwon kirji?",
+                "eng" : "is there chest pain?"
+            },
+            {
+                "id" : 7.3,
+                "hausa" : "akwai wahalar numfashi?",
+                "eng" : "is there difficulty in breathing?"
+            },
+            {
+                "id" : 7.4,
+                "hausa" : "ba a iya kwanciya ne filat sai da pillow?",
+                "eng" : "is there orthopnea?"
+            }]
+    },
+    {
+        "id": 8,
+        "hausa": "ciki",
+        "eng": "GIT",
+        "questions": [
+            {
+                "id" : 8.1,
+                "hausa" : "akwai zawo?",
+                "eng" : "is there diarrhea?"
+            },
+            {
+                "id" : 8.2,
+                "hausa" : "akwai amai?",
+                "eng" : "is there vomiting?"
+            },
+            {
+                "id" : 8.3,
+                "hausa" : "ido nayin kamar ruwan dorawa?",
+                "eng" : "is ther jaundice?"
+            },
+            {
+                "id" : 8.4,
+                "hausa" : "akwai dadewa babu yin kashi?",
+                "eng" : "is there constipation?"
+            }]
+    }
+]

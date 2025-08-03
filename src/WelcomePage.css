@@ -1,0 +1,21 @@
+p, .logo, .foot {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    height: calc(100vh - 400px);
+    align-items: center;
+    
+}
+
+.header {
+    font-weight: bolder;
+    margin-top: 70px;
+    font-size: 40px;
+}
+
+#foot {
+    bottom: 100px; 
+    position: fixed;
+}
