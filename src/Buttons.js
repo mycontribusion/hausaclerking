@@ -43,7 +43,7 @@ function Buttons() {
             {/*<button value={item.questions.map.eng} onClick={() => enterCategory(item.id)}>{item.questions[1].eng}</button>*/
             chosedSymptom.questions.map((qItem) => (
                 <div className='qbuttons' key={qItem.id}>
-                <button value={qItem.eng} onClick={() => showHausa(qItem.id)}>{qItem.eng}</button>
+                <button value={qItem.eng} id={qItem.id} onClick={() => showHausa(qItem.id)}>{qItem.eng}</button>
                 </div>
             ))
             }
@@ -53,7 +53,9 @@ function Buttons() {
         <div>
             <div className='answer-area'>{answerArea}</div>
             <div className='buttons'>
-                {buttonArea === 'symptoms' ? symptomsButtons : [questionButtons, goBackButton]}
+                {buttonArea === 'symptoms' ? <div className='cqdiv'>{symptomsButtons}</div> : [
+                    <div className='backdiv'>{goBackButton}</div>,
+                    <div className='cqdiv'>{questionButtons}</div>]}
             </div>
             <div>
                 

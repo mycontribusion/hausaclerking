@@ -1,22 +1,38 @@
+
 .buttons {
-    display: flex;
-    flex-direction: row;
-    bottom: 10px;
+    background-color: white;
     position: fixed;
-    gap: 10px;
-    justify-content: space-around;
+    bottom: 0;
     width: 100vw;
-    flex-wrap: wrap;
-    margin-bottom: 50px;
+    height: 200px;
+    margin-bottom: 40px;
+    overflow: scroll;
 }
+
+
 
 button {
     font-size: larger;
+    line-height: 25px;
+    width: 150px;
+    margin: 6px 0 0 6px;
+}
+
+.cqdiv, .button, .qbuttons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 12px;
+    align-items: center;
 }
 
 .goback {
     background-color: brown;
     color: white;
+    right: 0;
+    position: fixed;
+    font-size: larger;
+    margin-right: 4px;
+    z-index: 999;
 }
 
 .answer-area {
