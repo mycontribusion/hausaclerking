@@ -4,7 +4,7 @@
     position: fixed;
     bottom: 0;
     width: 100vw;
-    height: 170px;
+    height: 200px;
     margin-bottom: 40px;
     overflow: scroll;
 }
@@ -14,6 +14,13 @@ button {
     line-height: 25px;
     width: 150px;
     margin: 6px 0 0 6px;
+    color: rgba(64,112,91,255);
+    background-color: rgba(201,231,202,255);
+}
+
+button:hover {
+    background-color: rgba(64,112,91,255);
+    color: rgba(201,231,202,255);
 }
 
 .cqdiv, .button, .qbuttons {
@@ -34,7 +41,7 @@ button {
 
 .answer-area {
     background-color: azure;
-    height: 50vh;
+    height: 45vh;
     display: flex;
     justify-content: center;
     align-items: center;
