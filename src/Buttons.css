@@ -4,12 +4,10 @@
     position: fixed;
     bottom: 0;
     width: 100vw;
-    height: 200px;
+    height: 170px;
     margin-bottom: 40px;
     overflow: scroll;
 }
-
-
 
 button {
     font-size: larger;
@@ -41,6 +39,6 @@ button {
     justify-content: center;
     align-items: center;
     font-size: 50px;
-    margin-top: 50px;
+    margin-top: 7px;
     padding: 0 50px 0 50px;
 }
