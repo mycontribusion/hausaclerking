@@ -51,7 +51,7 @@ button:hover {
     overflow: scroll;
 }
 
-@media screen and (max-height: 700px) {
+@media screen and (max-height: 600px) {
     .ansque {
         display: flex;
         flex-direction: row;
