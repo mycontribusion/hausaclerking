@@ -29,6 +29,7 @@ button:hover {
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 12px;
+    margin-bottom: 12px;
 }
 
 .goback {
