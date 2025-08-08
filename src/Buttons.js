@@ -50,7 +50,7 @@ function Buttons() {
         </div>
 
     return(
-        <div>
+        <div className='ansque'>
             <div className='answer-area'>{answerArea}</div>
             <div className='buttons'>
                 {buttonArea === 'symptoms' ? <div className='cqdiv'>{symptomsButtons}</div> : [
