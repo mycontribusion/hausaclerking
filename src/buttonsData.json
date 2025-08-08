@@ -188,7 +188,7 @@
                 "eng": "does the cough prevent you from sleeping?"
             },
             {
-                "id": 4.10,
+                "id": 4.101,
                 "hausa": "tarin ya fi karfi da dare?",
                 "eng": "is the cough worse at night?"
             },
@@ -245,7 +245,7 @@
                 "eng": "what makes the pain better?"
             },
             {
-                "id": 5.10,
+                "id": 5.101,
                 "hausa": "me ke sa ciwon ya karu?",
                 "eng": "what makes the pain worse?"
             },
@@ -314,7 +314,7 @@
             {
                 "id": 7.2,
                 "hausa": "An taɓa suma?",
-                "eng": "have you ever fainted or lost consciousness?"
+                "eng": "have you ever lost consciousness?"
             },
             {
                 "id": 7.3,
@@ -337,7 +337,7 @@
                 "eng": "have you ever had a seizure or a 'fit'?"
             },
             {
-                "id": 7.10,
+                "id": 7.101,
                 "hausa": "akwai wahala gurin yin magana?",
                 "eng": "is there difficulty speaking or slurred speech?"
             },
@@ -409,7 +409,7 @@
                 "eng": "do you have a tight feeling in your chest?"
             },
             {
-                "id": 8.10,
+                "id": 8.101,
                 "hausa": "yayin numfashi, ana jin kamar karan wusir?",
                 "eng": "do you have wheezing?"
             },
@@ -481,7 +481,7 @@
                 "eng": "is the stool mucoid?"
             },
             {
-                "id": 9.10,
+                "id": 9.101,
                 "hausa": "amai sau nawa?",
                 "eng": "how often do you vomit?"
             },
@@ -543,7 +543,7 @@
                 "eng": "is there swelling in your legs?"
             },
             {
-                "id": 10.10,
+                "id": 10.101,
                 "hausa": "akwai jin jiri?",
                 "eng": "do you feel dizzy or lightheaded?"
             },
@@ -605,7 +605,7 @@
                 "eng": "do you have any discharge from your genitals?"
             },
             {
-                "id": 11.10,
+                "id": 11.101,
                 "hausa": "akwai wani kaikayi a wajen?",
                 "eng": "is there any itching or irritation in the area?"
             },
@@ -640,7 +640,7 @@
                 "eng": "have you given birth before?"
             },
             {
-                "id": 11.20,
+                "id": 11.201,
                 "hausa": "akwai matsalolin jima'i?",
                 "eng": "do you have any sexual problems?"
             }
