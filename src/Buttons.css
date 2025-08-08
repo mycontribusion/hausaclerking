@@ -17,10 +17,9 @@ button {
     color: rgba(64,112,91,255);
     background-color: rgba(201,231,202,255);
     border-radius: 10px;
-    border-style: none;
-    border-color: rgba(64,112,91,255);
+    border-color: white;
     border-width: 1px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    
 }
 
 button:hover {
