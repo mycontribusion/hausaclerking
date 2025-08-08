@@ -1,4 +1,5 @@
 
+
 .buttons {
     background-color: white;
     position: fixed;
@@ -82,5 +83,12 @@ button:hover {
 
     .button, .cqdiv {
         justify-content: center;
+    }
+
+    .img {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
