@@ -1,5 +1,6 @@
 
 
+
 .buttons {
     background-color: white;
     position: fixed;
@@ -20,6 +21,7 @@ button {
     border-radius: 10px;
     border-color: white;
     border-width: 1px;
+
     
 }
 

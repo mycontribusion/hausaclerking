@@ -14,5 +14,17 @@ code {
     monospace;
 }
 
+.twoheaders {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contactus {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  font-weight: bolder;
+}
+
 
 
