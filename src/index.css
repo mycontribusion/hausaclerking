@@ -187,7 +187,7 @@ h3 {
   border-top-right-radius: 0;
   box-shadow: 0 -10px 40px rgba(55, 104, 83, 0.1);
   overflow-y: auto;
-  height: 60vh;
+  height: 50vh;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
