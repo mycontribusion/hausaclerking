@@ -67,7 +67,7 @@ h3 {
   align-items: center;
   gap: clamp(0.5rem, 3vw, 2rem);
   padding: 0 clamp(0.75rem, 4vw, 3rem);
-  background: rgba(255, 255, 255, 0.7);
+
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--glass-border);
