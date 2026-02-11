@@ -1,8 +1,8 @@
 import { useState } from "react";
 import Buttons from "./Buttons";
 import Feedback from "./Feedback";
+import ThemeToggle from "./ThemeToggle";
 import logo from './hclogo.jpg';
-import "./HausaClerking.css"; // for styling
 
 function HausaClerking() {
   const [showFeedback, setShowFeedback] = useState(false);
@@ -13,26 +13,29 @@ function HausaClerking() {
 
   return (
     <div className="appwin">
-      <div className="twoheaders">
+      <header className="twoheaders">
         <div className="img">
-          <img src={logo} alt="logo" width="70px" height="70px" />
+          <img src={logo} alt="Hausa Clerking Logo" className="header-logo" />
         </div>
-        <div className="contactus" onClick={toggleFeedback}>
-          Contact-us
+        <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center' }}>
+          <ThemeToggle />
+          <button className="contactus" onClick={toggleFeedback}>
+            <span style={{ fontSize: '1.1rem' }}>💬</span>
+          </button>
         </div>
-      </div>
+      </header>
 
-      <div>
+      <main className="main-content"><p></p>
         <Buttons />
-      </div>
+      </main>
 
       {/* Feedback overlay */}
       {showFeedback && (
-        <div className="feedback-overlay">
-          <div className="feedback-popup">
+        <div className="feedback-overlay" onClick={toggleFeedback}>
+          <div className="feedback-popup" onClick={(e) => e.stopPropagation()}>
             <Feedback />
-            <button className="close-btn" onClick={toggleFeedback}>
-              ✖ Close
+            <button className="close-btn" onClick={toggleFeedback} aria-label="Close">
+              ✕
             </button>
           </div>
         </div>

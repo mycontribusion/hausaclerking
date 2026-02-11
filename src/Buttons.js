@@ -1,67 +1,285 @@
-
-import { useState } from 'react';
-import './Buttons.css';
+import { useState, useEffect } from 'react';
 import buttonsData from './buttonsData.json';
+import SearchBar from './SearchBar';
+
+const categoryIcons = {
+    'greetings': '👋',
+    'biodata': '📋',
+    'fever': '🤒',
+    'cough': '😷',
+    'pain': '😫',
+    'swelling': '🦵',
+    'CNS': '🧠',
+    'RS': '🫁',
+    'GIT': '🤢',
+    'CVS': '❤️',
+    'UGS': '🩺'
+};
 
 function Buttons() {
-    const[buttonArea,setButtonArea] = useState('symptoms')
-    const[symptomsId,setSymptomsId] = useState(1)
-    const[answerArea,setAnswerArea] = useState('Hausa text are pronounced exactly as they are written')
-   
+    const [buttonArea, setButtonArea] = useState('symptoms');
+    const [symptomsId, setSymptomsId] = useState(1);
+    const [answerArea, setAnswerArea] = useState('Hausa text are pronounced exactly as they are written');
+    const [searchQuery, setSearchQuery] = useState('');
+    const [favorites, setFavorites] = useState([]);
+    const [recentItems, setRecentItems] = useState([]);
 
-    let buttonsObj = buttonsData;
-    let chosedSymptom = buttonsObj[symptomsId-1]
+    // Load favorites and recent from localStorage
+    useEffect(() => {
+        const savedFavorites = localStorage.getItem('hausaFavorites');
+        const savedRecent = localStorage.getItem('hausaRecent');
+        if (savedFavorites) setFavorites(JSON.parse(savedFavorites));
+        if (savedRecent) setRecentItems(JSON.parse(savedRecent));
+    }, []);
 
-    const showHausa = (qposition) => {
-        let question = chosedSymptom.questions.find(q => q.id===qposition);
-        setAnswerArea(question?.hausa)
-    }
+    // Save favorites to localStorage
+    useEffect(() => {
+        localStorage.setItem('hausaFavorites', JSON.stringify(favorites));
+    }, [favorites]);
+
+    // Save recent to localStorage
+    useEffect(() => {
+        localStorage.setItem('hausaRecent', JSON.stringify(recentItems));
+    }, [recentItems]);
+
+    const showHausa = (qposition, categoryId = symptomsId) => {
+        let question = buttonsData[categoryId - 1].questions.find(q => q.id === qposition);
+        if (question) {
+            setAnswerArea(question.hausa);
+            addToRecent({ ...question, categoryId, categoryName: buttonsData[categoryId - 1].eng });
+        }
+    };
 
     const enterCategory = (position) => {
-        setButtonArea('questions')
-        setSymptomsId(position)
-    }
+        setButtonArea('questions');
+        setSymptomsId(position);
+        setSearchQuery('');
+    };
 
     const goBack = () => {
-        setButtonArea('symptoms')
-        setAnswerArea('Hausa text are pronounced exactly as they are written')
-    }
+        setButtonArea('symptoms');
+        setAnswerArea('Hausa text are pronounced exactly as they are written');
+        setSearchQuery('');
+    };
 
-    let goBackButton = 
-            <div>
-                <button className='goback' onClick={() => goBack()}>back</button>
+    const toggleFavorite = (question, categoryId) => {
+        const favoriteItem = { ...question, categoryId, categoryName: buttonsData[categoryId - 1].eng };
+        const isFavorited = favorites.some(fav => fav.id === question.id && fav.categoryId === categoryId);
+
+        if (isFavorited) {
+            setFavorites(favorites.filter(fav => !(fav.id === question.id && fav.categoryId === categoryId)));
+        } else {
+            setFavorites([...favorites, favoriteItem]);
+        }
+    };
+
+    const addToRecent = (item) => {
+        const newRecent = [item, ...recentItems.filter(r => !(r.id === item.id && r.categoryId === item.categoryId))].slice(0, 10);
+        setRecentItems(newRecent);
+    };
+
+    const isFavorited = (questionId, categoryId) => {
+        return favorites.some(fav => fav.id === questionId && fav.categoryId === categoryId);
+    };
+
+    // Filter questions based on search
+    const getFilteredQuestions = () => {
+        if (!searchQuery.trim()) {
+            return buttonsData[symptomsId - 1].questions;
+        }
+        return buttonsData[symptomsId - 1].questions.filter(q =>
+            q.eng.toLowerCase().includes(searchQuery.toLowerCase()) ||
+            q.hausa.toLowerCase().includes(searchQuery.toLowerCase())
+        );
+    };
+
+    // Search across all categories
+    const getSearchResults = () => {
+        if (!searchQuery.trim()) return [];
+
+        const results = [];
+        buttonsData.forEach(category => {
+            category.questions.forEach(question => {
+                if (
+                    question.eng.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                    question.hausa.toLowerCase().includes(searchQuery.toLowerCase())
+                ) {
+                    results.push({
+                        ...question,
+                        categoryId: category.id,
+                        categoryName: category.eng
+                    });
+                }
+            });
+        });
+        return results;
+    };
+
+    const symptomsButtons = buttonsData.map((item) => (
+        <button key={item.id} onClick={() => enterCategory(item.id)} className="category-card">
+            <span className="category-icon">{categoryIcons[item.eng] || '✨'}</span>
+            <span className="category-label">{item.eng}</span>
+        </button>
+    ));
+
+    const filteredQuestions = getFilteredQuestions();
+    const searchResults = getSearchResults();
+
+    const questionButtons = filteredQuestions.map((qItem) => (
+        <button key={qItem.id} onClick={() => showHausa(qItem.id)} className="question-card">
+            <span className="question-text">{qItem.eng}</span>
+            <button
+                className={`favorite-btn ${isFavorited(qItem.id, symptomsId) ? 'favorited' : ''}`}
+                onClick={(e) => {
+                    e.stopPropagation();
+                    toggleFavorite(qItem, symptomsId);
+                }}
+                aria-label="Toggle favorite"
+            >
+                {isFavorited(qItem.id, symptomsId) ? '⭐' : '☆'}
+            </button>
+        </button>
+    ));
+
+    const searchResultButtons = searchResults.map((item) => (
+        <button key={`${item.categoryId}-${item.id}`} onClick={() => showHausa(item.id, item.categoryId)} className="question-card search-result">
+            <span className="question-text">{item.eng}</span>
+            <span className="category-badge">{item.categoryName}</span>
+            <button
+                className={`favorite-btn ${isFavorited(item.id, item.categoryId) ? 'favorited' : ''}`}
+                onClick={(e) => {
+                    e.stopPropagation();
+                    toggleFavorite(item, item.categoryId);
+                }}
+                aria-label="Toggle favorite"
+            >
+                {isFavorited(item.id, item.categoryId) ? '⭐' : '☆'}
+            </button>
+        </button>
+    ));
+
+    const favoriteButtons = favorites.map((item) => (
+        <button key={`fav-${item.categoryId}-${item.id}`} onClick={() => showHausa(item.id, item.categoryId)} className="question-card">
+            <span className="question-text">{item.eng}</span>
+            <span className="category-badge">{item.categoryName}</span>
+            <button
+                className="favorite-btn favorited"
+                onClick={(e) => {
+                    e.stopPropagation();
+                    toggleFavorite(item, item.categoryId);
+                }}
+                aria-label="Remove favorite"
+            >
+                ⭐
+            </button>
+        </button>
+    ));
+
+    const recentButtons = recentItems.map((item, index) => (
+        <button key={`recent-${index}`} onClick={() => showHausa(item.id, item.categoryId)} className="question-card">
+            <span className="question-text">{item.eng}</span>
+            <span className="category-badge">{item.categoryName}</span>
+            <button
+                className={`favorite-btn ${isFavorited(item.id, item.categoryId) ? 'favorited' : ''}`}
+                onClick={(e) => {
+                    e.stopPropagation();
+                    toggleFavorite(item, item.categoryId);
+                }}
+                aria-label="Toggle favorite"
+            >
+                {isFavorited(item.id, item.categoryId) ? '⭐' : '☆'}
+            </button>
+        </button>
+    ));
+
+    return (
+        <section className='ansque'>
+            <div className='answer-area'>
+                <p>{answerArea}</p>
+                <button className="audio-btn" onClick={() => alert('Audio files will be available soon, Insha\'Allah!')}>
+                    🔊 Play Audio
+                </button>
             </div>
-
-    let symptomsButtons = buttonsObj.map((item) => (
-        <div className="button" key={item.id}>
-            <button value={item.eng} onClick={() => enterCategory(item.id)}>{item.eng}</button>
-        </div>
-    ))
-
-    let questionButtons =
-        <div className="button">
-            {/*<button value={item.questions.map.eng} onClick={() => enterCategory(item.id)}>{item.questions[1].eng}</button>*/
-            chosedSymptom.questions.map((qItem) => (
-                <div className='qbuttons' key={qItem.id}>
-                <button value={qItem.eng} id={qItem.id} onClick={() => showHausa(qItem.id)}>{qItem.eng}</button>
-                </div>
-            ))
-            }
-        </div>
-
-    return(
-        <div className='ansque'>
-            <div className='answer-area'>{answerArea}</div>
             <div className='buttons'>
-                {buttonArea === 'symptoms' ? <div className='cqdiv'>{symptomsButtons}</div> : [
-                    <div className='backdiv'>{goBackButton}</div>,
-                    <div className='cqdiv'>{questionButtons}</div>]}
+                {/* Tab Navigation */}
+                <div className="tab-nav">
+                    <button
+                        className={`tab-btn ${buttonArea === 'symptoms' ? 'active' : ''}`}
+                        onClick={() => { setButtonArea('symptoms'); setSearchQuery(''); }}
+                    >
+                        📚 Categories
+                    </button>
+                    <button
+                        className={`tab-btn ${buttonArea === 'favorites' ? 'active' : ''}`}
+                        onClick={() => { setButtonArea('favorites'); setSearchQuery(''); }}
+                    >
+                        ⭐ Favorites {favorites.length > 0 && `(${favorites.length})`}
+                    </button>
+                    <button
+                        className={`tab-btn ${buttonArea === 'recent' ? 'active' : ''}`}
+                        onClick={() => { setButtonArea('recent'); setSearchQuery(''); }}
+                    >
+                        🕒 Recent
+                    </button>
+                </div>
+
+                {/* Search Bar */}
+                {buttonArea === 'questions' && (
+                    <SearchBar
+                        searchQuery={searchQuery}
+                        onSearchChange={setSearchQuery}
+                        onClear={() => setSearchQuery('')}
+                    />
+                )}
+
+                {/* Content Area */}
+                {buttonArea === 'symptoms' && (
+                    <div className='cqdiv'>{symptomsButtons}</div>
+                )}
+
+                {buttonArea === 'questions' && (
+                    <>
+                        <div className='backdiv'>
+                            <button className='goback' onClick={goBack}>
+                                ← Back to Categories
+                            </button>
+                        </div>
+                        <div className='cqdiv'>
+                            {searchQuery.trim() ? (
+                                searchResultButtons.length > 0 ? (
+                                    searchResultButtons
+                                ) : (
+                                    <div className="no-results">No results found for "{searchQuery}"</div>
+                                )
+                            ) : (
+                                questionButtons
+                            )}
+                        </div>
+                    </>
+                )}
+
+                {buttonArea === 'favorites' && (
+                    <div className='cqdiv'>
+                        {favoriteButtons.length > 0 ? (
+                            favoriteButtons
+                        ) : (
+                            <div className="no-results">No favorites yet. Tap the ☆ icon to add phrases!</div>
+                        )}
+                    </div>
+                )}
+
+                {buttonArea === 'recent' && (
+                    <div className='cqdiv'>
+                        {recentButtons.length > 0 ? (
+                            recentButtons
+                        ) : (
+                            <div className="no-results">No recent phrases yet.</div>
+                        )}
+                    </div>
+                )}
             </div>
-            <div>
-                
-            </div>
-            </div>
-    )
+        </section>
+    );
 }
 
 export default Buttons;
