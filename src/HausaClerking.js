@@ -83,7 +83,9 @@ function HausaClerking() {
 
   return (
     <div className="appwin">
-      <Header onToggleFeedback={toggleFeedback} />
+      <div style={{ position: "relative" }}>
+        <Header onToggleFeedback={toggleFeedback} />
+      </div>
 
       <main className="ansque">
         <AnswerArea text={answerArea} />

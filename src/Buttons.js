@@ -29,22 +29,13 @@ function Buttons({ viewState, data, actions }) {
                     )}
 
                     {buttonArea === 'questions' && (
-                        <>
-                            <button
-                                className="back-btn"
-                                onClick={() => setButtonArea('symptoms')}
-                                style={{ marginBottom: '10px', padding: '5px 10px', cursor: 'pointer', gridColumn: '1 / -1', width: '100%' }}
-                            >
-                                ← Back to Categories
-                            </button>
-                            <QuestionList
-                                questions={currentQuestions}
-                                onSelectQuestion={showHausa}
-                                onToggleFavorite={toggleFavorite}
-                                isFavorited={isFavorited}
-                                currentCategoryId={symptomsId}
-                            />
-                        </>
+                        <QuestionList
+                            questions={currentQuestions}
+                            onSelectQuestion={showHausa}
+                            onToggleFavorite={toggleFavorite}
+                            isFavorited={isFavorited}
+                            currentCategoryId={symptomsId}
+                        />
                     )}
 
                     {buttonArea === 'favorites' && (
