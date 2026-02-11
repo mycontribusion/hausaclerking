@@ -1,12 +1,4 @@
-.buttons {
-    background-color: white;
-    position: fixed;
-    bottom: 0;
-    width: 100vw;
-    height: 200px;
-    margin-bottom: 40px;
-    overflow: scroll;
-}
+/* Layout handled by index.css */
 
 button {
     font-size: larger;
@@ -18,8 +10,6 @@ button {
     border-radius: 0px;
     border-color: white;
     border-width: 1px;
-
-
 }
 
 button:hover {
@@ -46,55 +36,6 @@ button:hover {
     font-size: larger;
     margin-right: 4px;
     z-index: 999;
-}
-
-.answer-area {
-    background-color: azure;
-    height: 45vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2.7em;
-    margin-top: 7px;
-    padding: 0 50px 0 50px;
-    overflow: scroll;
-}
-
-@media screen and (max-height: 600px) {
-    .ansque {
-        display: flex;
-        flex-direction: row;
-        gap: 2px;
-        width: 100vw;
-        height: 80vh;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .buttons {
-        height: 80vh;
-        overflow: scroll;
-        margin-top: 50px;
-        width: 48vw;
-        position: relative;
-    }
-
-    .answer-area {
-        width: 48vw;
-        height: 80vh;
-    }
-
-    .button,
-    .cqdiv {
-        justify-content: center;
-    }
-
-    .img {
-        width: 100vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
 }
 
 /* Tab Navigation Styles */
