@@ -32,8 +32,6 @@ function HausaClerking() {
     setSearchQuery,
     getGlobalSearchResults,
     getFilteredQuestions,
-    getFilteredFavorites,
-    getFilteredRecent
   } = useSearch(favorites, recentItems);
 
   // Handlers
