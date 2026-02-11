@@ -115,7 +115,45 @@ function Buttons() {
         return results;
     };
 
-    const symptomsButtons = buttonsData.map((item) => (
+    // Filter categories based on search
+    const getFilteredCategories = () => {
+        if (!searchQuery.trim()) {
+            return buttonsData;
+        }
+        return buttonsData.filter(category =>
+            category.eng.toLowerCase().includes(searchQuery.toLowerCase())
+        );
+    };
+
+    // Filter favorites based on search
+    const getFilteredFavorites = () => {
+        if (!searchQuery.trim()) {
+            return favorites;
+        }
+        return favorites.filter(item =>
+            item.eng.toLowerCase().includes(searchQuery.toLowerCase()) ||
+            item.hausa.toLowerCase().includes(searchQuery.toLowerCase()) ||
+            item.categoryName.toLowerCase().includes(searchQuery.toLowerCase())
+        );
+    };
+
+    // Filter recent items based on search
+    const getFilteredRecent = () => {
+        if (!searchQuery.trim()) {
+            return recentItems;
+        }
+        return recentItems.filter(item =>
+            item.eng.toLowerCase().includes(searchQuery.toLowerCase()) ||
+            item.hausa.toLowerCase().includes(searchQuery.toLowerCase()) ||
+            item.categoryName.toLowerCase().includes(searchQuery.toLowerCase())
+        );
+    };
+
+    const filteredCategories = getFilteredCategories();
+    const filteredFavorites = getFilteredFavorites();
+    const filteredRecentItems = getFilteredRecent();
+
+    const symptomsButtons = filteredCategories.map((item) => (
         <button key={item.id} onClick={() => enterCategory(item.id)} className="category-card">
             <span className="category-icon">{categoryIcons[item.eng] || '✨'}</span>
             <span className="category-label">{item.eng}</span>
@@ -158,7 +196,7 @@ function Buttons() {
         </button>
     ));
 
-    const favoriteButtons = favorites.map((item) => (
+    const favoriteButtons = filteredFavorites.map((item) => (
         <button key={`fav-${item.categoryId}-${item.id}`} onClick={() => showHausa(item.id, item.categoryId)} className="question-card">
             <span className="question-text">{item.eng}</span>
             <span className="category-badge">{item.categoryName}</span>
@@ -175,7 +213,7 @@ function Buttons() {
         </button>
     ));
 
-    const recentButtons = recentItems.map((item, index) => (
+    const recentButtons = filteredRecentItems.map((item, index) => (
         <button key={`recent-${index}`} onClick={() => showHausa(item.id, item.categoryId)} className="question-card">
             <span className="question-text">{item.eng}</span>
             <span className="category-badge">{item.categoryName}</span>
@@ -197,65 +235,68 @@ function Buttons() {
             <div className='answer-area'>
                 <p>{answerArea}</p>
                 <button className="audio-btn" onClick={() => alert('Audio files will be available soon, Insha\'Allah!')}>
-                    🔊 Play Audio
+                    🔊 Audio
                 </button>
             </div>
             <div className='buttons'>
-                {/* Tab Navigation */}
+                {/* Tab Navigation with Search - All on one line */}
                 <div className="tab-nav">
-                    <button
-                        className={`tab-btn ${buttonArea === 'symptoms' ? 'active' : ''}`}
-                        onClick={() => { setButtonArea('symptoms'); setSearchQuery(''); }}
-                    >
-                        📚 Categories
-                    </button>
-                    <button
-                        className={`tab-btn ${buttonArea === 'favorites' ? 'active' : ''}`}
-                        onClick={() => { setButtonArea('favorites'); setSearchQuery(''); }}
-                    >
-                        ⭐ Favorites {favorites.length > 0 && `(${favorites.length})`}
-                    </button>
-                    <button
-                        className={`tab-btn ${buttonArea === 'recent' ? 'active' : ''}`}
-                        onClick={() => { setButtonArea('recent'); setSearchQuery(''); }}
-                    >
-                        🕒 Recent
-                    </button>
-                </div>
-
-                {/* Search Bar */}
-                {buttonArea === 'questions' && (
+                    <div className="tab-group">
+                        <button
+                            className={`tab-btn ${buttonArea === 'symptoms' ? 'active' : ''}`}
+                            onClick={() => { setButtonArea('symptoms'); setSearchQuery(''); }}
+                            aria-label="Categories"
+                            title="Categories"
+                        >
+                            📚
+                        </button>
+                        <button
+                            className={`tab-btn ${buttonArea === 'favorites' ? 'active' : ''}`}
+                            onClick={() => { setButtonArea('favorites'); setSearchQuery(''); }}
+                            aria-label="Favorites"
+                            title="Favorites"
+                        >
+                            ⭐
+                        </button>
+                        <button
+                            className={`tab-btn ${buttonArea === 'recent' ? 'active' : ''}`}
+                            onClick={() => { setButtonArea('recent'); setSearchQuery(''); }}
+                            aria-label="Recent"
+                            title="Recent"
+                        >
+                            🕒
+                        </button>
+                    </div>
                     <SearchBar
                         searchQuery={searchQuery}
                         onSearchChange={setSearchQuery}
                         onClear={() => setSearchQuery('')}
                     />
-                )}
+                </div>
 
                 {/* Content Area */}
                 {buttonArea === 'symptoms' && (
-                    <div className='cqdiv'>{symptomsButtons}</div>
+                    <div className='cqdiv'>
+                        {symptomsButtons.length > 0 ? (
+                            symptomsButtons
+                        ) : (
+                            <div className="no-results">No categories found for "{searchQuery}"</div>
+                        )}
+                    </div>
                 )}
 
                 {buttonArea === 'questions' && (
-                    <>
-                        <div className='backdiv'>
-                            <button className='goback' onClick={goBack}>
-                                ← Back to Categories
-                            </button>
-                        </div>
-                        <div className='cqdiv'>
-                            {searchQuery.trim() ? (
-                                searchResultButtons.length > 0 ? (
-                                    searchResultButtons
-                                ) : (
-                                    <div className="no-results">No results found for "{searchQuery}"</div>
-                                )
+                    <div className='cqdiv'>
+                        {searchQuery.trim() ? (
+                            searchResultButtons.length > 0 ? (
+                                searchResultButtons
                             ) : (
-                                questionButtons
-                            )}
-                        </div>
-                    </>
+                                <div className="no-results">No results found for "{searchQuery}"</div>
+                            )
+                        ) : (
+                            questionButtons
+                        )}
+                    </div>
                 )}
 
                 {buttonArea === 'favorites' && (
@@ -263,7 +304,11 @@ function Buttons() {
                         {favoriteButtons.length > 0 ? (
                             favoriteButtons
                         ) : (
-                            <div className="no-results">No favorites yet. Tap the ☆ icon to add phrases!</div>
+                            searchQuery.trim() ? (
+                                <div className="no-results">No favorites found for "{searchQuery}"</div>
+                            ) : (
+                                <div className="no-results">No favorites yet. Tap the ☆ icon to add phrases!</div>
+                            )
                         )}
                     </div>
                 )}
@@ -273,7 +318,11 @@ function Buttons() {
                         {recentButtons.length > 0 ? (
                             recentButtons
                         ) : (
-                            <div className="no-results">No recent phrases yet.</div>
+                            searchQuery.trim() ? (
+                                <div className="no-results">No recent items found for "{searchQuery}"</div>
+                            ) : (
+                                <div className="no-results">No recent phrases yet.</div>
+                            )
                         )}
                     </div>
                 )}

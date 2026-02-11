@@ -1,38 +1,33 @@
 .search-container {
-    position: sticky;
-    top: 0;
     z-index: 10;
-    background: var(--card-bg);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    padding: 1rem 1.5rem;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    flex: 1;
+    min-width: 120px;
+    margin-right: 0.5rem;
 }
 
 .search-wrapper {
     position: relative;
     display: flex;
     align-items: center;
-    max-width: 1000px;
-    margin: 0 auto;
+    width: 100%;
 }
 
 .search-icon {
     position: absolute;
-    left: 1rem;
-    font-size: 1.2rem;
+    left: 0.65rem;
+    font-size: 1rem;
     pointer-events: none;
     opacity: 0.5;
 }
 
 .search-input {
     width: 100%;
-    padding: 0.875rem 3rem 0.875rem 3rem;
+    padding: 0.5rem 2rem 0.5rem 2rem;
     border-radius: 12px;
     border: 1px solid #e2e8f0;
     background: white;
     font-family: inherit;
-    font-size: 0.95rem;
+    font-size: 0.8rem;
     transition: var(--transition-normal);
 }
 
@@ -69,6 +64,29 @@
     background: #fecdd3;
     color: #e11d48;
     transform: rotate(90deg) scale(1.1);
+}
+
+
+@media screen and (min-width: 480px) {
+    .search-container {
+        min-width: 160px;
+    }
+
+    .search-input {
+        padding: 0.65rem 2.5rem 0.65rem 2.5rem;
+        font-size: 0.875rem;
+    }
+
+    .search-icon {
+        left: 1rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .search-container {
+        min-width: 200px;
+    }
 }
 
 @media screen and (min-width: 1024px) {
