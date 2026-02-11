@@ -11,7 +11,7 @@ const categoryIcons = {
     'RS': '🫁',
     'GIT': '🤢',
     'CVS': '❤️',
-    'UGS': '🩺'
+    'GUS': '🩺'
 };
 
 const CategoryList = ({ categories, onSelectCategory }) => {

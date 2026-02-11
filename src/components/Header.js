@@ -6,12 +6,12 @@ const Header = ({ onToggleFeedback }) => {
     return (
         <header className="twoheaders">
             <div className="img">
-                <img src={logo} alt="Hausa Clerking Logo" className="header-logo" />
+                <img style={{ width: "0.8em", height: "0.8em" }} src={logo} alt="Hausa Clerking Logo" className="header-logo" />
             </div>
             <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center' }}>
                 <ThemeToggle />
                 <button className="contactus" onClick={onToggleFeedback}>
-                    <span style={{ fontSize: '1.1rem' }}>💬</span>
+                    <span style={{ fontSize: '0.8rem' }}>💬</span>
                 </button>
             </div>
         </header>
