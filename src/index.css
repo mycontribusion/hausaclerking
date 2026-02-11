@@ -71,7 +71,7 @@ h3 {
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--glass-border);
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 100;
   height: var(--header-height);
@@ -409,6 +409,7 @@ button:active {
   color: #e11d48;
   transform: rotate(90deg) scale(1.1);
 }
+
 /* Dark Mode Variables */
 body.dark-mode {
   --bg-main: #0f1410;
