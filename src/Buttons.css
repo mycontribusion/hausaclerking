@@ -67,7 +67,7 @@ button:hover {
     display: flex;
     gap: 8px;
     flex-shrink: 0;
-    /* Prevent buttons from shrinking too much */
+    /* Prevent buttonss from shrinking too much */
 }
 
 .tab-btn {
