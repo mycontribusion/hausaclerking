@@ -56,12 +56,6 @@ function Buttons() {
         setSearchQuery('');
     };
 
-    const goBack = () => {
-        setButtonArea('symptoms');
-        setAnswerArea('Hausa text are pronounced exactly as they are written');
-        setSearchQuery('');
-    };
-
     const toggleFavorite = (question, categoryId) => {
         const favoriteItem = { ...question, categoryId, categoryName: buttonsData[categoryId - 1].eng };
         const isFavorited = favorites.some(fav => fav.id === question.id && fav.categoryId === categoryId);
