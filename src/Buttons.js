@@ -4,7 +4,7 @@ import QuestionList from './components/QuestionList';
 function Buttons({ viewState, data, actions }) {
     const { buttonArea, isSearching, symptomsId } = viewState;
     const { buttonsData, favorites, recentItems, globalSearchResults, currentQuestions } = data;
-    const { enterCategory, showHausa, toggleFavorite, isFavorited, setButtonArea } = actions;
+    const { enterCategory, showHausa, toggleFavorite, isFavorited } = actions;
 
     return (
         <div className='cqdiv'>
