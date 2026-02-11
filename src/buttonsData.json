@@ -1,5 +1,3 @@
-
-
 [
     {
         "id": 1,
@@ -7,40 +5,45 @@
         "eng": "greetings",
         "questions": [
             {
-                "id" : 1.1,
-                "hausa" : "sannu ya ya jiki?",
-                "eng" : "sorry how are you feeling?"
+                "id": 1.1,
+                "hausa": "sannu ya ya jiki?",
+                "eng": "sorry how are you feeling?"
             },
             {
-                "id" : 1.2,
-                "hausa" : "Allah Ya kara sauki",
-                "eng" : "May Allah increase you in health"
+                "id": 1.2,
+                "hausa": "Allah Ya kara sauki",
+                "eng": "May Allah heal you"
             },
             {
-                "id" : 1.3,
-                "hausa" : "chene haka",
-                "eng" : "say yes"
+                "id": 1.3,
+                "hausa": "chene haka",
+                "eng": "say yes"
             },
             {
-                "id" : 1.4,
-                "hausa" : "chene ba haka ba",
-                "eng" : "say no"
+                "id": 1.4,
+                "hausa": "chene ba haka ba",
+                "eng": "say no"
             },
             {
-                "id" : 1.5,
-                "hausa" : "An gane?",
-                "eng" : "Understood?"
+                "id": 1.5,
+                "hausa": "An gane?",
+                "eng": "Understood?"
             },
             {
-                "id" : 1.6,
-                "hausa" : "Eh",
-                "eng" : "yes"
+                "id": 1.6,
+                "hausa": "Eh",
+                "eng": "yes"
             },
             {
-                "id" : 1.7,
-                "hausa" : "A'a",
-                "eng" : "no"
-            }       
+                "id": 1.7,
+                "hausa": "A'a",
+                "eng": "no"
+            },
+            {
+                "id": 1.8,
+                "hausa": "Yi haka",
+                "eng": "do like this"
+            }
         ]
     },
     {
@@ -49,24 +52,24 @@
         "eng": "biodata",
         "questions": [
             {
-                "id" : 2.1,
-                "hausa" : "meye suna?",
-                "eng" : "what is your name?"
+                "id": 2.1,
+                "hausa": "meye suna?",
+                "eng": "what is your name?"
             },
             {
-                "id" : 2.2,
-                "hausa" : "nawa shekaru?",
-                "eng" : "how old are you?"
+                "id": 2.2,
+                "hausa": "nawa shekaru?",
+                "eng": "how old are you?"
             },
             {
-                "id" : 2.3,
-                "hausa" : "meye aiki?",
-                "eng" : "what is your job?"
+                "id": 2.3,
+                "hausa": "meye aiki?",
+                "eng": "what is your job?"
             },
             {
-                "id" : 2.4,
-                "hausa" : "ina ne gurin zama?",
-                "eng" : "where do you live?"
+                "id": 2.4,
+                "hausa": "ina ne gurin zama?",
+                "eng": "where do you live?"
             },
             {
                 "id": 2.5,
@@ -81,24 +84,24 @@
         "eng": "fever",
         "questions": [
             {
-                "id" : 3.1,
-                "hausa" : "akwai zazzabi?",
-                "eng" : "do you have fever?"
+                "id": 3.1,
+                "hausa": "akwai zazzabi?",
+                "eng": "do you have fever?"
             },
             {
-                "id" : 3.2,
-                "hausa" : "yawshe zazaabi ya fara",
-                "eng" : "when did the fever started?"
+                "id": 3.2,
+                "hausa": "yawshe zazaabi ya fara",
+                "eng": "when did the fever started?"
             },
             {
-                "id" : 3.3,
-                "hausa" : "jikin, da zafi sosai?",
-                "eng" : "is the fever high?"
+                "id": 3.3,
+                "hausa": "jikin, da zafi sosai?",
+                "eng": "is the fever high?"
             },
             {
-                "id" : 3.4,
-                "hausa" : "ko ba zafi sosai?",
-                "eng" : "is the fever low?"
+                "id": 3.4,
+                "hausa": "ko ba zafi sosai?",
+                "eng": "is the fever low?"
             },
             {
                 "id": 3.5,
@@ -153,24 +156,24 @@
         "eng": "cough",
         "questions": [
             {
-                "id" : 4.1,
-                "hausa" : "akwai tari?",
-                "eng" : "do you have cough?"
+                "id": 4.1,
+                "hausa": "akwai tari?",
+                "eng": "do you have cough?"
             },
             {
-                "id" : 4.2,
-                "hausa" : "yawshe tarin ya fara",
-                "eng" : "when did the cough started?"
+                "id": 4.2,
+                "hausa": "yawshe tarin ya fara",
+                "eng": "when did the cough started?"
             },
             {
-                "id" : 4.3,
-                "hausa" : "akwai kaki?",
-                "eng" : "is it productive?"
+                "id": 4.3,
+                "hausa": "akwai kaki?",
+                "eng": "is it productive?"
             },
             {
-                "id" : 4.4,
-                "hausa" : "meye kalar kakin?",
-                "eng" : "what is the colour of the sputum?"
+                "id": 4.4,
+                "hausa": "meye kalar kakin?",
+                "eng": "the colour of the sputum?"
             },
             {
                 "id": 4.5,
@@ -185,12 +188,12 @@
             {
                 "id": 4.9,
                 "hausa": "tarin yana hana yin barchi?",
-                "eng": "does the cough prevent you from sleeping?"
+                "eng": "it prevents you from sleeping?"
             },
             {
                 "id": 4.101,
                 "hausa": "tarin ya fi karfi da dare?",
-                "eng": "is the cough worse at night?"
+                "eng": "is it worse at night?"
             },
             {
                 "id": 4.11,
@@ -215,19 +218,19 @@
         "eng": "pain",
         "questions": [
             {
-                "id" : 5.1,
-                "hausa" : "akwai chiwo?",
-                "eng" : "do you feel pain?"
+                "id": 5.1,
+                "hausa": "akwai chiwo?",
+                "eng": "do you feel pain?"
             },
             {
-                "id" : 5.2,
-                "hausa" : "nuna min inda chiwon yake",
-                "eng" : "show me where the pain is"
+                "id": 5.2,
+                "hausa": "nuna min inda chiwon yake",
+                "eng": "show me where the pain is"
             },
             {
-                "id" : 5.3,
-                "hausa" : "chiwon sosai ne?",
-                "eng" : "is the pain severe"
+                "id": 5.3,
+                "hausa": "chiwon sosai ne?",
+                "eng": "is the pain severe"
             },
             {
                 "id": 5.7,
@@ -258,7 +261,8 @@
                 "id": 5.14,
                 "hausa": "ciwon ya farawa ne kwatsam?",
                 "eng": "did the pain start suddenly?"
-            }]
+            }
+        ]
     },
     {
         "id": 6,
@@ -266,24 +270,24 @@
         "eng": "swelling",
         "questions": [
             {
-                "id" : 6.1,
-                "hausa" : "akwai kumburi?",
-                "eng" : "do you have any swelling??"
+                "id": 6.1,
+                "hausa": "akwai kumburi?",
+                "eng": "do you have any swelling??"
             },
             {
-                "id" : 6.2,
-                "hausa" : "nunamin inda kumburin yake",
-                "eng" : "show me where the swelling is"
+                "id": 6.2,
+                "hausa": "nunamin inda kumburin yake",
+                "eng": "show me where the swelling is"
             },
             {
-                "id" : 6.3,
-                "hausa" : "tun yawshe kumburin ya fara?",
-                "eng" : "when did the swelling started?"
+                "id": 6.3,
+                "hausa": "tun yawshe kumburin ya fara?",
+                "eng": "when did the swelling started?"
             },
             {
-                "id" : 6.4,
-                "hausa" : "ya kai girman haka?",
-                "eng" : "is it upto this size?"
+                "id": 6.4,
+                "hausa": "ya kai girman haka?",
+                "eng": "is it upto this size?"
             },
             {
                 "id": 6.5,
@@ -294,12 +298,8 @@
                 "id": 6.6,
                 "hausa": "ya fara ne kwatsam ko a hankali?",
                 "eng": "did it start suddenly or gradually?"
-            },
-            {
-                "id": 6.13,
-                "hausa": "yaya girmansa ya canza tun farko?",
-                "eng": "how has the size changed since it started?"
-            }]
+            }
+        ]
     },
     {
         "id": 7,
@@ -309,62 +309,67 @@
             {
                 "id": 7.1,
                 "hausa": "akwai ciwon kai?",
-                "eng": "do you have a headache?"
+                "eng": "any headache?"
             },
             {
                 "id": 7.2,
                 "hausa": "An taɓa suma?",
-                "eng": "have you ever lost consciousness?"
+                "eng": "any loss of consciousness?"
             },
             {
                 "id": 7.3,
                 "hausa": "akwai matsalar mantuwa?",
-                "eng": "do you have memory problems?"
-            },
-            {
-                "id": 7.4,
-                "hausa": "akwai jiri?",
-                "eng": "do you feel dizzy or lightheaded?"
+                "eng": "any memory problems?"
             },
             {
                 "id": 7.6,
-                "hausa": "akwai jin rauni a wani ɓangare na jiki?",
-                "eng": "do you feel weakness in any part of your body?"
+                "hausa": "akwai rauni a wani ɓangare na jiki?",
+                "eng": "any wound?"
             },
             {
                 "id": 7.8,
-                "hausa": "a baya akwai lokachi da aka yi fizge-fizge?",
-                "eng": "have you ever had a seizure or a 'fit'?"
+                "hausa": "a baya akwai lokachi da aka yi fizge-fizge kamar farfadiya?",
+                "eng": "history of seizures?"
             },
             {
                 "id": 7.101,
-                "hausa": "akwai wahala gurin yin magana?",
-                "eng": "is there difficulty speaking or slurred speech?"
+                "hausa": "akwai chanji a yin magana?",
+                "eng": "any change in speech?"
             },
             {
                 "id": 7.11,
                 "hausa": "akwai masalar gani bibiyu?",
-                "eng": "is there history of double vision?"
+                "eng": "any double vision?"
             },
             {
                 "id": 7.12,
                 "hausa": "akwai matsala da ji?",
-                "eng": "are there problems with your hearing?"
+                "eng": "any hearing problems?"
             },
             {
                 "id": 7.13,
-                "hausa": "akwai chanji a jin kamshi ko ɗanɗano?",
-                "eng": "have you noticed a change in your sense of smell or taste?"
+                "hausa": "akwai chanji a jin kamshi?",
+                "eng": "any change in sense of smell?"
+            },
+            {
+                "id": 7.14,
+                "hausa": "akwai chanji a jin ɗanɗano?",
+                "eng": "any change in sense of taste?"
             },
             {
                 "id": 7.15,
                 "hausa": "akwai buguwa a kai?",
-                "eng": "have you had any head injury?"
+                "eng": "any head injury?"
             },
             {
                 "id": 7.18,
                 "hausa": "shin ana jin kamar za a faɗi?",
-                "eng": "do you feel like you are going to fall?"
+                "eng": "any dizziness?"
+            },
+            {
+                "id": 7.19,
+                "hausa": "shin ana jin kamar za a faɗi?",
+                "eng": "any weakness?"
             }
         ]
     },
@@ -376,52 +381,52 @@
             {
                 "id": 8.1,
                 "hausa": "akwai wahalar numfashi?",
-                "eng": "do you have difficulty breathing?"
+                "eng": "any difficulty breathing?"
             },
             {
                 "id": 8.2,
                 "hausa": "numfashin na kara wahala idan ana motsi?",
-                "eng": "does the shortness of breath happen with activity?"
+                "eng": "dyspnea on exertion?"
             },
             {
                 "id": 8.4,
                 "hausa": "akwai tari?",
-                "eng": "do you have a cough?"
+                "eng": "any cough?"
             },
             {
                 "id": 8.5,
                 "hausa": "a na fitar da kaki?",
-                "eng": "is the cough productive?"
+                "eng": "is cough productive?"
             },
             {
                 "id": 8.6,
                 "hausa": "akwai jini a chikin kakin?",
-                "eng": "is there blood in the sputum?"
+                "eng": "any blood in sputum?"
             },
             {
                 "id": 8.7,
                 "hausa": "akwai chiwon kirji?",
-                "eng": "do you have chest pain?"
+                "eng": "any chest pain?"
             },
             {
                 "id": 8.9,
                 "hausa": "ana ji kamar an daure kirjin?",
-                "eng": "do you have a tight feeling in your chest?"
+                "eng": "any chest tightedness?"
             },
             {
                 "id": 8.101,
                 "hausa": "yayin numfashi, ana jin kamar karan wusir?",
-                "eng": "do you have wheezing?"
+                "eng": "history of wheezing?"
             },
             {
                 "id": 8.11,
                 "hausa": "akwai shan taba?",
-                "eng": "are you a smoker?"
+                "eng": "history of smoking?"
             },
             {
                 "id": 8.14,
                 "hausa": "an taɓa samun ciwon tarin fuka?",
-                "eng": "have you ever had tuberculosis?"
+                "eng": "history of TB?"
             },
             {
                 "id": 8.16,
@@ -467,13 +472,18 @@
             },
             {
                 "id": 9.7,
-                "hausa": "cikin murdawa yakeyi? ko quna?",
-                "eng": "is the abdominal pain colicky? or burning?"
+                "hausa": "cikin murdawa yakeyi, ya kama ya saki?",
+                "eng": "is it colicky?"
+            },
+            {
+                "id": 9.8,
+                "hausa": "cikin quna yake kamar ansa wuta?",
+                "eng": "is it burning?"
             },
             {
                 "id": 9.8,
                 "hausa": "akwai jini a cikin kashin?",
-                "eng": "is there blood in your stool?"
+                "eng": "any bloody stool?"
             },
             {
                 "id": 9.9,
@@ -483,27 +493,27 @@
             {
                 "id": 9.101,
                 "hausa": "amai sau nawa?",
-                "eng": "how often do you vomit?"
+                "eng": "episode of vomiting?"
             },
             {
                 "id": 9.11,
                 "hausa": "akwai jini a cikin amain?",
-                "eng": "is there blood in your vomit?"
+                "eng": "history of hematemesis?"
             },
             {
                 "id": 9.12,
                 "hausa": "akwai rashin cin abinci?",
-                "eng": "do you have a poor appetite?"
+                "eng": "history of anorexia?"
             },
             {
                 "id": 9.13,
                 "hausa": "zawo sau nawa?",
-                "eng": "how often do you pass loose stool?"
+                "eng": "frequency of stool?"
             },
             {
                 "id": 9.15,
                 "hausa": "akwai ramewa?",
-                "eng": "have you lost weight?"
+                "eng": "any weight loss?"
             }
         ]
     },
@@ -519,13 +529,23 @@
             },
             {
                 "id": 10.2,
-                "hausa": "ciwon na zuwa hannun, wuya, ko hammata?",
-                "eng": "does the pain spread to your arm, neck, or armpit?"
+                "hausa": "ciwon na zuwa hannun hagu?",
+                "eng": "radiates to the left arm?"
+            },
+            {
+                "id": 10.21,
+                "hausa": "ciwon na zuwa wuya?",
+                "eng": "radiates to the neck?"
+            },
+            {
+                "id": 10.22,
+                "hausa": "ciwon na zuwa hammata?",
+                "eng": "radiates to the armpit?"
             },
             {
                 "id": 10.4,
                 "hausa": "yaushe ne ciwon kirjin ya fara?",
-                "eng": "when did the chest pain start?"
+                "eng": "onset of chest pain?"
             },
             {
                 "id": 10.5,
@@ -535,27 +555,27 @@
             {
                 "id": 10.6,
                 "hausa": "akwai wahalar numfashi?",
-                "eng": "is there difficulty breathing?"
+                "eng": "any difficulty breathing?"
             },
             {
                 "id": 10.8,
                 "hausa": "akwai kumburi a ƙafafu?",
-                "eng": "is there swelling in your legs?"
+                "eng": "any pedal edema?"
             },
             {
                 "id": 10.101,
                 "hausa": "akwai jin jiri?",
-                "eng": "do you feel dizzy or lightheaded?"
+                "eng": "history of syncope?"
             },
             {
                 "id": 10.12,
                 "hausa": "ana iya kwanchiya ba pillow?",
-                "eng": "is it difficult to breathe when you lie flat?"
+                "eng": "history of orthopnea?"
             },
             {
                 "id": 10.13,
                 "hausa": "an taɓa chewa akwai hawan jini?",
-                "eng": "have you been told you have high blood pressure?"
+                "eng": "history of HTN?"
             }
         ]
     },
@@ -567,32 +587,32 @@
             {
                 "id": 11.1,
                 "hausa": "akwai jin zafi yayin fitsari?",
-                "eng": "do you feel pain or burning when you urinate?"
+                "eng": "any dysuria?"
             },
             {
                 "id": 11.2,
                 "hausa": "yawan fitsari ya karu?",
-                "eng": "do you urinate more often than usual?"
+                "eng": "any frequency?"
             },
             {
                 "id": 11.3,
                 "hausa": "ana iya rike fitsari?",
-                "eng": "do you feel an urgent need to urinate?"
+                "eng": "any urgency?"
             },
             {
                 "id": 11.4,
                 "hausa": "akwai jini a cikin fitsarin?",
-                "eng": "is there blood in your urine?"
+                "eng": "any hematuria?"
             },
             {
                 "id": 11.5,
                 "hausa": "meye kalar fitsari?",
-                "eng": "what is the color of your urine?"
+                "eng": "the color of your urine?"
             },
             {
                 "id": 11.6,
                 "hausa": "ana sakin fitsari a wando?",
-                "eng": "do you leak urine?"
+                "eng": "any incontinence?"
             },
             {
                 "id": 11.7,
@@ -601,18 +621,18 @@
             },
             {
                 "id": 11.9,
-                "hausa": "wani abu na fitowa daga jiki?",
-                "eng": "do you have any discharge from your genitals?"
+                "hausa": "wani abu na kfitowa daga jiki?",
+                "eng": "Any PV discharge?"
             },
             {
                 "id": 11.101,
                 "hausa": "akwai wani kaikayi a wajen?",
-                "eng": "is there any itching or irritation in the area?"
+                "eng": "any PV itching?"
             },
             {
                 "id": 11.11,
-                "hausa": "yaushe ne hailar ki ta ƙarshe?",
-                "eng": "when was your last menstrual period?"
+                "hausa": "yaushe kika fara hailar ki ta ƙarshe?",
+                "eng": "when was your LMP?"
             },
             {
                 "id": 11.12,
@@ -622,12 +642,12 @@
             {
                 "id": 11.13,
                 "hausa": "kina zubar da jini mai yawa yayin haila?",
-                "eng": "do you have heavy bleeding during your period?"
+                "eng": "do you've hyper-menorrhoea?"
             },
             {
                 "id": 11.14,
                 "hausa": "kina jin ciwo yayin haila?",
-                "eng": "do you have pain during your period?"
+                "eng": "do you've menorrhagia?"
             },
             {
                 "id": 11.18,
@@ -637,12 +657,12 @@
             {
                 "id": 11.19,
                 "hausa": "kin taɓa haihuwa?",
-                "eng": "have you given birth before?"
+                "eng": "any previous delivery?"
             },
             {
                 "id": 11.201,
                 "hausa": "akwai matsalolin jima'i?",
-                "eng": "do you have any sexual problems?"
+                "eng": "any sexual problems?"
             }
         ]
     }
