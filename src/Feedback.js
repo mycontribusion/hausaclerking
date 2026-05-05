@@ -1,52 +1,42 @@
-import { useState } from "react";
 import "./Feedback.css";
 
 function Feedback() {
-  const [subject, setSubject] = useState("");
-  const [message, setMessage] = useState("");
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const mailtoLink = `mailto:ahmadmusa1114@gmail.com?subject=${encodeURIComponent(
-      subject
-    )}&body=${encodeURIComponent(message)}`;
-    window.location.href = mailtoLink;
-  };
-
   return (
     <div className="feedback-container">
       <header>
-        <h2>Feedback & Support</h2>
-        <p>💡 Found a bug? Have suggestions? Share your thoughts below.</p>
+        <h2>Connect with Developer</h2>
+        <p>💡 Found a bug or have suggestions? Reach out directly!</p>
       </header>
 
-      <form onSubmit={handleSubmit} className="feedback-form">
-        <div className="form-group">
-          <label htmlFor="subject">Subject (optional)</label>
-          <input
-            type="text"
-            id="subject"
-            value={subject}
-            onChange={(e) => setSubject(e.target.value)}
-            placeholder="Enter subject (optional)"
-          />
-        </div>
+      <div className="contact-links" style={{ display: "flex", flexDirection: "column", gap: "1rem", marginTop: "1rem" }}>
+        <a
+          href="mailto:ahmadmusamuhd@gmail.com"
+          className="submit-btn"
+          style={{ textDecoration: 'none', textAlign: 'center', display: 'block' }}
+        >
+          <span>📧 Send an Email</span>
+        </a>
 
-        <div className="form-group">
-          <label htmlFor="message">Your Message</label>
-          <textarea
-            id="message"
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-            placeholder="Type your feedback here..."
-            required
-          ></textarea>
-        </div>
+        <a
+          href="https://wa.me/2347030061764"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="submit-btn"
+          style={{ textDecoration: 'none', textAlign: 'center', display: 'block', background: '#25D366' }}
+        >
+          <span>📱 Chat on WhatsApp</span>
+        </a>
 
-        <button type="submit" className="submit-btn">
-          <span>📩 Send Feedback</span>
-        </button>
-      </form>
+        <a
+          href="https://www.linkedin.com/in/ahmad-m-musa-b93587156/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="submit-btn"
+          style={{ textDecoration: 'none', textAlign: 'center', display: 'block', background: '#0077b5' }}
+        >
+          <span>💼 Connect on LinkedIn</span>
+        </a>
+      </div>
     </div>
   );
 }

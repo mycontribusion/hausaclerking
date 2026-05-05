@@ -5,8 +5,8 @@ import logo from '../hclogo.jpg';
 const Header = ({ onToggleFeedback }) => {
     return (
         <header className="twoheaders">
-            <div className="img">
-                <img style={{ width: "0.8em", height: "0.8em" }} src={logo} alt="Hausa Clerking Logo" className="header-logo" />
+            <div className="header-brand">
+                <h1 className="header-title">HausaClerking</h1>
             </div>
             <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center' }}>
                 <ThemeToggle />

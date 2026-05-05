@@ -13,6 +13,7 @@ function HausaClerking() {
   const [buttonArea, setButtonArea] = useState('symptoms');
   const [symptomsId, setSymptomsId] = useState(1);
   const [answerArea, setAnswerArea] = useState('Hausa text are pronounced exactly as they are written');
+  const [activeQuestionId, setActiveQuestionId] = useState(null);
 
   const toggleFeedback = () => {
     setShowFeedback(!showFeedback);
@@ -61,6 +62,7 @@ function HausaClerking() {
 
     if (question) {
       setAnswerArea(question.hausa);
+      setActiveQuestionId(questionId);
       addToRecent({ ...question, categoryId, categoryName });
     }
   };
@@ -69,11 +71,13 @@ function HausaClerking() {
     setButtonArea('questions');
     setSymptomsId(categoryId);
     setSearchQuery('');
+    setActiveQuestionId(null);
   };
 
   const handleTabChange = (tab) => {
     setButtonArea(tab);
     setSearchQuery('');
+    setActiveQuestionId(null);
   }
 
   // Derived Logic for passing to Buttons
@@ -103,7 +107,8 @@ function HausaClerking() {
             viewState={{
               buttonArea,
               isSearching,
-              symptomsId
+              symptomsId,
+              activeQuestionId
             }}
             data={{
               buttonsData,

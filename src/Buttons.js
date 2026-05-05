@@ -2,7 +2,7 @@ import CategoryList from './components/CategoryList';
 import QuestionList from './components/QuestionList';
 
 function Buttons({ viewState, data, actions }) {
-    const { buttonArea, isSearching, symptomsId } = viewState;
+    const { buttonArea, isSearching, symptomsId, activeQuestionId } = viewState;
     const { buttonsData, favorites, recentItems, globalSearchResults, currentQuestions } = data;
     const { enterCategory, showHausa, toggleFavorite, isFavorited } = actions;
 
@@ -15,6 +15,7 @@ function Buttons({ viewState, data, actions }) {
                     onSelectQuestion={showHausa}
                     onToggleFavorite={toggleFavorite}
                     isFavorited={isFavorited}
+                    activeQuestionId={activeQuestionId}
                     showCategoryBadge={true}
                     emptyMessage="No results found."
                 />
@@ -34,6 +35,7 @@ function Buttons({ viewState, data, actions }) {
                             onSelectQuestion={showHausa}
                             onToggleFavorite={toggleFavorite}
                             isFavorited={isFavorited}
+                            activeQuestionId={activeQuestionId}
                             currentCategoryId={symptomsId}
                         />
                     )}
@@ -44,6 +46,7 @@ function Buttons({ viewState, data, actions }) {
                             onSelectQuestion={showHausa}
                             onToggleFavorite={toggleFavorite}
                             isFavorited={isFavorited}
+                            activeQuestionId={activeQuestionId}
                             showCategoryBadge={true}
                             emptyMessage="No favorites yet. Tap the ☆ icon to add phrases!"
                         />
@@ -55,6 +58,7 @@ function Buttons({ viewState, data, actions }) {
                             onSelectQuestion={showHausa}
                             onToggleFavorite={toggleFavorite}
                             isFavorited={isFavorited}
+                            activeQuestionId={activeQuestionId}
                             showCategoryBadge={true}
                             emptyMessage="No recent phrases yet."
                         />

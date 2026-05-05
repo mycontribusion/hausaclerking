@@ -5,6 +5,7 @@ const QuestionList = ({
     onSelectQuestion,
     onToggleFavorite,
     isFavorited,
+    activeQuestionId = null,
     currentCategoryId = null,
     showCategoryBadge = false,
     emptyMessage = "No items found."
@@ -29,7 +30,7 @@ const QuestionList = ({
                     <button
                         key={key}
                         onClick={() => onSelectQuestion(item.id, categoryId)}
-                        className={`question-card ${showCategoryBadge ? 'search-result' : ''}`}
+                        className={`question-card ${showCategoryBadge ? 'search-result' : ''} ${item.id === activeQuestionId ? 'active' : ''}`}
                     >
                         <span className="question-text">{item.eng}</span>
 
