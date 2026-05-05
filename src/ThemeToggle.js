@@ -1,14 +1,17 @@
 import { useState, useEffect } from 'react';
 
 function ThemeToggle() {
-    const [isDark, setIsDark] = useState(false);
+    const [isDark, setIsDark] = useState(true);
 
     useEffect(() => {
         // Load saved theme
         const savedTheme = localStorage.getItem('hausaTheme');
-        if (savedTheme === 'dark') {
+        if (savedTheme === 'light') {
+            setIsDark(false);
+            document.body.classList.add('light-mode');
+        } else {
             setIsDark(true);
-            document.body.classList.add('dark-mode');
+            document.body.classList.remove('light-mode');
         }
     }, []);
 
@@ -17,10 +20,10 @@ function ThemeToggle() {
         setIsDark(newIsDark);
 
         if (newIsDark) {
-            document.body.classList.add('dark-mode');
+            document.body.classList.remove('light-mode');
             localStorage.setItem('hausaTheme', 'dark');
         } else {
-            document.body.classList.remove('dark-mode');
+            document.body.classList.add('light-mode');
             localStorage.setItem('hausaTheme', 'light');
         }
     };
