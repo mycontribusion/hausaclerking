@@ -33,6 +33,9 @@ function registerValidSW(swUrl, config) {
     navigator.serviceWorker
         .register(swUrl)
         .then((registration) => {
+            // Check for updates on every page load when online
+            registration.update().catch(() => {});
+
             registration.onupdatefound = () => {
                 const installingWorker = registration.installing;
                 if (installingWorker == null) {
