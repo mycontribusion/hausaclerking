@@ -1,0 +1,787 @@
+[
+    {
+        "id": 1,
+        "hausa": "Gaishe-Gaishe",
+        "eng": "greetings",
+        "questions": [
+            {
+                "id": 1.1,
+                "hausa": "sannu ya ya jiki?",
+                "phonetic": "sahn-noo yah yah jee-kee?",
+                "eng": "sorry how are you feeling?"
+            },
+            {
+                "id": 1.2,
+                "hausa": "Allah Ya kara sauki",
+                "phonetic": "Ah-llah Yah kah-rah sow-kee",
+                "eng": "May Allah heal you"
+            },
+            {
+                "id": 1.3,
+                "hausa": "chene haka",
+                "phonetic": "cheh-neh hah-kah",
+                "eng": "say yes"
+            },
+            {
+                "id": 1.4,
+                "hausa": "chene ba haka ba",
+                "phonetic": "cheh-neh bah hah-kah bah",
+                "eng": "say no"
+            },
+            {
+                "id": 1.5,
+                "hausa": "An gane?",
+                "phonetic": "Ahn gah-neh?",
+                "eng": "Understood?"
+            },
+            {
+                "id": 1.6,
+                "hausa": "Eh",
+                "phonetic": "Eh",
+                "eng": "yes"
+            },
+            {
+                "id": 1.7,
+                "hausa": "A'a",
+                "phonetic": "Ah-ah",
+                "eng": "no"
+            },
+            {
+                "id": 1.8,
+                "hausa": "Yi haka",
+                "phonetic": "Yee hah-kah",
+                "eng": "do like this"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "hausa": "suna da bayanan mara lafiya",
+        "eng": "biodata",
+        "questions": [
+            {
+                "id": 2.1,
+                "hausa": "meye suna?",
+                "phonetic": "meh-yeh soo-nah?",
+                "eng": "what is your name?"
+            },
+            {
+                "id": 2.2,
+                "hausa": "nawa shekaru?",
+                "phonetic": "nah-wah sheh-kah-roo?",
+                "eng": "how old are you?"
+            },
+            {
+                "id": 2.3,
+                "hausa": "meye aiki?",
+                "phonetic": "meh-yeh eye-kee?",
+                "eng": "what is your job?"
+            },
+            {
+                "id": 2.4,
+                "hausa": "ina ne gurin zama?",
+                "phonetic": "ee-nah neh goo-reen zah-mah?",
+                "eng": "where do you live?"
+            },
+            {
+                "id": 2.5,
+                "hausa": "Akwai aure?",
+                "phonetic": "ah-kwhy ow-reh?",
+                "eng": "are you married?"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "hausa": "Zazzaɓi",
+        "eng": "fever",
+        "questions": [
+            {
+                "id": 3.1,
+                "hausa": "akwai zazzabi?",
+                "phonetic": "ah-kwhy zah-zzah-bee?",
+                "eng": "do you have fever?"
+            },
+            {
+                "id": 3.2,
+                "hausa": "yawshe zazaabi ya fara",
+                "phonetic": "yow-sheh zah-zzah-bee yah fah-rah",
+                "eng": "when did the fever started?"
+            },
+            {
+                "id": 3.3,
+                "hausa": "jikin, da zafi sosai?",
+                "phonetic": "jee-keen, dah zah-fee soh-sigh?",
+                "eng": "is the fever high?"
+            },
+            {
+                "id": 3.4,
+                "hausa": "ko ba zafi sosai?",
+                "phonetic": "koh bah zah-fee soh-sigh?",
+                "eng": "is the fever low?"
+            },
+            {
+                "id": 3.5,
+                "hausa": "lokaci daya zazzabin ya fara?",
+                "phonetic": "loh-kah-chee dah-yah zah-zzah-been yah fah-rah?",
+                "eng": "did the fever started suddenly?"
+            },
+            {
+                "id": 3.6,
+                "hausa": "yakan tafi ne ya dawo?",
+                "phonetic": "yah-kahn tah-fee neh yah dah-woh?",
+                "eng": "does it come and go?"
+            },
+            {
+                "id": 3.9,
+                "hausa": "akwai jin sanyi sosai?",
+                "phonetic": "ah-kwhy jeen sahn-yee soh-sigh?",
+                "eng": "do you have severe chills?"
+            },
+            {
+                "id": 3.12,
+                "hausa": "akwai jin gajiya?",
+                "phonetic": "ah-kwhy jeen gah-jee-yah?",
+                "eng": "are you feeling tired or weak?"
+            },
+            {
+                "id": 3.13,
+                "hausa": "ansha wani magani?",
+                "phonetic": "ahn-shah wah-nee mah-gah-nee?",
+                "eng": "have you taken any medication?"
+            },
+            {
+                "id": 3.14,
+                "hausa": "wani magani aka sha?",
+                "phonetic": "wah-nee mah-gah-nee ah-kah shah?",
+                "eng": "which medicine did you take?"
+            },
+            {
+                "id": 3.15,
+                "hausa": "shin maganin yayi aiki?",
+                "phonetic": "sheen mah-gah-neen yah-yee eye-kee?",
+                "eng": "did the medication help?"
+            },
+            {
+                "id": 3.16,
+                "hausa": "shin akwai wani a gida da yayi zazzabi?",
+                "phonetic": "sheen ah-kwhy wah-nee ah gee-dah dah yah-yee zah-zzah-bee?",
+                "eng": "has anyone around you had a fever recently?"
+            },
+            {
+                "id": 3.17,
+                "hausa": "Anyi tafiya kwanan nan?",
+                "phonetic": "Ahn-yee tah-fee-yah kwah-nahn nahn?",
+                "eng": "have you traveled recently?"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "hausa": "Tari",
+        "eng": "cough",
+        "questions": [
+            {
+                "id": 4.1,
+                "hausa": "akwai tari?",
+                "phonetic": "ah-kwhy tah-ree?",
+                "eng": "do you have cough?"
+            },
+            {
+                "id": 4.2,
+                "hausa": "yawshe tarin ya fara",
+                "phonetic": "yow-sheh tah-reen yah fah-rah",
+                "eng": "when did the cough started?"
+            },
+            {
+                "id": 4.3,
+                "hausa": "akwai kaki?",
+                "phonetic": "ah-kwhy kah-kee?",
+                "eng": "is it productive?"
+            },
+            {
+                "id": 4.4,
+                "hausa": "meye kalar kakin?",
+                "phonetic": "meh-yeh kah-lar kah-keen?",
+                "eng": "the colour of the sputum?"
+            },
+            {
+                "id": 4.5,
+                "hausa": "shin akwai jini chikin kakin?",
+                "phonetic": "sheen ah-kwhy jee-nee chee-keen kah-keen?",
+                "eng": "is there blood in the sputum?"
+            },
+            {
+                "id": 4.6,
+                "hausa": "lokaci daya tarin ya fara?",
+                "phonetic": "loh-kah-chee dah-yah tah-reen yah fah-rah?",
+                "eng": "did the cough start suddenly?"
+            },
+            {
+                "id": 4.9,
+                "hausa": "tarin yana hana yin barchi?",
+                "phonetic": "tah-reen yah-nah hah-nah yeen bar-chee?",
+                "eng": "it prevents you from sleeping?"
+            },
+            {
+                "id": 4.101,
+                "hausa": "tarin ya fi karfi da dare?",
+                "phonetic": "tah-reen yah fee kar-fee dah dah-reh?",
+                "eng": "is it worse at night?"
+            },
+            {
+                "id": 4.11,
+                "hausa": "akwai wahalar numfashi?",
+                "phonetic": "ah-kwhy wah-hah-lar noom-fah-shee?",
+                "eng": "is there difficulty in breathing?"
+            },
+            {
+                "id": 4.12,
+                "hausa": "Akwai atishawa?",
+                "phonetic": "ah-kwhy ah-tee-shah-wah?",
+                "eng": "are you wheezing?"
+            },
+            {
+                "id": 4.13,
+                "hausa": "wani abu ne ke sa tarin ya yi karfi?",
+                "phonetic": "wah-nee ah-boo neh keh sah tah-reen yah yee kar-fee?",
+                "eng": "what makes the cough worse?"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "hausa": "Ciwo",
+        "eng": "pain",
+        "questions": [
+            {
+                "id": 5.1,
+                "hausa": "akwai chiwo?",
+                "phonetic": "ah-kwhy chee-woh?",
+                "eng": "do you feel pain?"
+            },
+            {
+                "id": 5.2,
+                "hausa": "nuna min inda chiwon yake",
+                "phonetic": "noo-nah meen een-dah chee-won yah-keh",
+                "eng": "show me where the pain is"
+            },
+            {
+                "id": 5.3,
+                "hausa": "chiwon sosai ne?",
+                "phonetic": "chee-won soh-sigh neh?",
+                "eng": "is the pain severe"
+            },
+            {
+                "id": 5.7,
+                "hausa": "yaushe chiwon ya fara?",
+                "phonetic": "yow-sheh chee-won yah fah-rah?",
+                "eng": "when did the pain start?"
+            },
+            {
+                "id": 5.8,
+                "hausa": "chiwon yana nan a kowane lokachi?",
+                "phonetic": "chee-won yah-nah nahn ah koh-wah-neh loh-kah-chee?",
+                "eng": "is the pain constant?"
+            },
+            {
+                "id": 5.9,
+                "hausa": "me ke sa ciwon ya ragu?",
+                "phonetic": "meh keh sah chee-won yah rah-goo?",
+                "eng": "what makes the pain better?"
+            },
+            {
+                "id": 5.101,
+                "hausa": "me ke sa ciwon ya karu?",
+                "phonetic": "meh keh sah chee-won yah kah-roo?",
+                "eng": "what makes the pain worse?"
+            },
+            {
+                "id": 5.11,
+                "hausa": "ciwon yana yawo zuwa wani wuri?",
+                "phonetic": "chee-won yah-nah yah-woh zoo-wah wah-nee woo-ree?",
+                "eng": "does the pain radiates?"
+            },
+            {
+                "id": 5.14,
+                "hausa": "ciwon ya farawa ne kwatsam?",
+                "phonetic": "chee-won yah fah-rah-wah neh kwat-sahm?",
+                "eng": "did the pain start suddenly?"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "hausa": "Kumburi",
+        "eng": "swelling",
+        "questions": [
+            {
+                "id": 6.1,
+                "hausa": "akwai kumburi?",
+                "phonetic": "ah-kwhy koom-boo-ree?",
+                "eng": "do you have any swelling??"
+            },
+            {
+                "id": 6.2,
+                "hausa": "nunamin inda kumburin yake",
+                "phonetic": "noo-nah-meen een-dah koom-boo-reen yah-keh",
+                "eng": "show me where the swelling is"
+            },
+            {
+                "id": 6.3,
+                "hausa": "tun yawshe kumburin ya fara?",
+                "phonetic": "toon yow-sheh koom-boo-reen yah fah-rah?",
+                "eng": "when did the swelling started?"
+            },
+            {
+                "id": 6.4,
+                "hausa": "ya kai girman haka?",
+                "phonetic": "yah kigh geer-mahn hah-kah?",
+                "eng": "is it upto this size?"
+            },
+            {
+                "id": 6.5,
+                "hausa": "kumburin a gefe daya ne?",
+                "phonetic": "koom-boo-reen ah geh-feh dah-yah neh?",
+                "eng": "is the swelling on one side?"
+            },
+            {
+                "id": 6.6,
+                "hausa": "ya fara ne kwatsam ko a hankali?",
+                "phonetic": "yah fah-rah neh kwat-sahm koh ah hahn-kah-lee?",
+                "eng": "did it start suddenly or gradually?"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "hausa": "Jijiya da Kwakwalwa",
+        "eng": "CNS",
+        "questions": [
+            {
+                "id": 7.1,
+                "hausa": "akwai ciwon kai?",
+                "phonetic": "ah-kwhy chee-won kigh?",
+                "eng": "any headache?"
+            },
+            {
+                "id": 7.2,
+                "hausa": "An taɓa suma?",
+                "phonetic": "Ahn tah-bah soo-mah?",
+                "eng": "any loss of consciousness?"
+            },
+            {
+                "id": 7.3,
+                "hausa": "akwai matsalar mantuwa?",
+                "phonetic": "ah-kwhy maht-sah-lar mahn-too-wah?",
+                "eng": "any memory problems?"
+            },
+            {
+                "id": 7.6,
+                "hausa": "akwai rauni a wani ɓangare na jiki?",
+                "phonetic": "ah-kwhy raw-nee ah wah-nee bahn-gah-reh nah jee-kee?",
+                "eng": "any wound?"
+            },
+            {
+                "id": 7.8,
+                "hausa": "a baya akwai lokachi da aka yi fizge-fizge kamar farfadiya?",
+                "phonetic": "ah bah-yah ah-kwhy loh-kah-chee dah ah-kah yee feez-geh feez-geh kah-mar far-fah-dee-yah?",
+                "eng": "history of seizures?"
+            },
+            {
+                "id": 7.101,
+                "hausa": "akwai chanji a yin magana?",
+                "phonetic": "ah-kwhy chahn-jee ah yeen mah-gah-nah?",
+                "eng": "any change in speech?"
+            },
+            {
+                "id": 7.11,
+                "hausa": "akwai masalar gani bibiyu?",
+                "phonetic": "ah-kwhy maht-sah-lar gah-nee bee-bee-yoo?",
+                "eng": "any double vision?"
+            },
+            {
+                "id": 7.12,
+                "hausa": "akwai matsala da ji?",
+                "phonetic": "ah-kwhy maht-sah-lah dah jee?",
+                "eng": "any hearing problems?"
+            },
+            {
+                "id": 7.13,
+                "hausa": "akwai chanji a jin kamshi?",
+                "phonetic": "ah-kwhy chahn-jee ah jeen kahm-shee?",
+                "eng": "any change in sense of smell?"
+            },
+            {
+                "id": 7.14,
+                "hausa": "akwai chanji a jin ɗanɗano?",
+                "phonetic": "ah-kwhy chahn-jee ah jeen dahn-dah-noh?",
+                "eng": "any change in sense of taste?"
+            },
+            {
+                "id": 7.15,
+                "hausa": "akwai buguwa a kai?",
+                "phonetic": "ah-kwhy boo-goo-wah ah kigh?",
+                "eng": "any head injury?"
+            },
+            {
+                "id": 7.18,
+                "hausa": "shin ana jin kamar za a faɗi?",
+                "phonetic": "sheen ah-nah jeen kah-mar zah ah fah-dee?",
+                "eng": "any dizziness?"
+            },
+            {
+                "id": 7.19,
+                "hausa": "shin ana jin kamar za a faɗi?",
+                "phonetic": "sheen ah-nah jeen kah-mar zah ah fah-dee?",
+                "eng": "any weakness?"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "hausa": "Numfashi",
+        "eng": "RS",
+        "questions": [
+            {
+                "id": 8.1,
+                "hausa": "akwai wahalar numfashi?",
+                "phonetic": "ah-kwhy wah-hah-lar noom-fah-shee?",
+                "eng": "any difficulty breathing?"
+            },
+            {
+                "id": 8.2,
+                "hausa": "numfashin na kara wahala idan ana motsi?",
+                "phonetic": "noom-fah-sheen nah kah-rah wah-hah-lah ee-dahn ah-nah moh-tsee?",
+                "eng": "dyspnea on exertion?"
+            },
+            {
+                "id": 8.4,
+                "hausa": "akwai tari?",
+                "phonetic": "ah-kwhy tah-ree?",
+                "eng": "any cough?"
+            },
+            {
+                "id": 8.5,
+                "hausa": "a na fitar da kaki?",
+                "phonetic": "ah nah fee-tar dah kah-kee?",
+                "eng": "is cough productive?"
+            },
+            {
+                "id": 8.6,
+                "hausa": "akwai jini a chikin kakin?",
+                "phonetic": "ah-kwhy jee-nee ah chee-keen kah-keen?",
+                "eng": "any blood in sputum?"
+            },
+            {
+                "id": 8.7,
+                "hausa": "akwai chiwon kirji?",
+                "phonetic": "ah-kwhy chee-won keer-jee?",
+                "eng": "any chest pain?"
+            },
+            {
+                "id": 8.9,
+                "hausa": "ana ji kamar an daure kirjin?",
+                "phonetic": "ah-nah jee kah-mar ahn dow-reh keer-jeen?",
+                "eng": "any chest tightedness?"
+            },
+            {
+                "id": 8.101,
+                "hausa": "yayin numfashi, ana jin kamar karan wusir?",
+                "phonetic": "yah-yeen noom-fah-shee, ah-nah jee kah-mar kah-rahn woo-seer?",
+                "eng": "history of wheezing?"
+            },
+            {
+                "id": 8.11,
+                "hausa": "akwai shan taba?",
+                "phonetic": "ah-kwhy shahn tah-bah?",
+                "eng": "history of smoking?"
+            },
+            {
+                "id": 8.14,
+                "hausa": "an taɓa samun ciwon tarin fuka?",
+                "phonetic": "ahn tah-bah sah-moon chee-won tah-reen foo-kah?",
+                "eng": "history of TB?"
+            },
+            {
+                "id": 8.16,
+                "hausa": "akwai asma?",
+                "phonetic": "ah-kwhy ahs-mah?",
+                "eng": "do you have asthma?"
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "hausa": "ciki",
+        "eng": "GIT",
+        "questions": [
+            {
+                "id": 9.1,
+                "hausa": "akwai zawo?",
+                "phonetic": "ah-kwhy zah-woh?",
+                "eng": "is there diarrhea?"
+            },
+            {
+                "id": 9.2,
+                "hausa": "akwai amai?",
+                "phonetic": "ah-kwhy ah-my?",
+                "eng": "is there vomiting?"
+            },
+            {
+                "id": 9.3,
+                "hausa": "ido nayin kamar ruwan dorawa?",
+                "phonetic": "ee-doh nah-yeen kah-mar roo-wahn doh-rah-wah?",
+                "eng": "is there jaundice?"
+            },
+            {
+                "id": 9.4,
+                "hausa": "akwai dadewa babu yin kashi?",
+                "phonetic": "ah-kwhy dah-deh-wah bah-boo yeen kah-shee?",
+                "eng": "is there constipation?"
+            },
+            {
+                "id": 9.5,
+                "hausa": "akwai ciwon ciki?",
+                "phonetic": "ah-kwhy chee-won chee-kee?",
+                "eng": "is there abdominal pain?"
+            },
+            {
+                "id": 9.6,
+                "hausa": "a ina ne ciwon yake?",
+                "phonetic": "ah ee-nah neh chee-won yah-keh?",
+                "eng": "where is the pain located?"
+            },
+            {
+                "id": 9.7,
+                "hausa": "cikin murdawa yakeyi, ya kama ya saki?",
+                "phonetic": "chee-keen moor-dah-wah yah-keh-yee, yah kah-mah yah sah-kee?",
+                "eng": "is it colicky?"
+            },
+            {
+                "id": 9.8,
+                "hausa": "cikin quna yake kamar ansa wuta?",
+                "phonetic": "chee-keen koo-nah yah-keh kah-mar ahn-sah woo-tah?",
+                "eng": "is it burning?"
+            },
+            {
+                "id": 9.8,
+                "hausa": "akwai jini a cikin kashin?",
+                "phonetic": "ah-kwhy jee-nee ah chee-keen kah-sheen?",
+                "eng": "any bloody stool?"
+            },
+            {
+                "id": 9.9,
+                "hausa": "akwai majina a chikin kashin?",
+                "phonetic": "ah-kwhy mah-jee-nah ah chee-keen kah-sheen?",
+                "eng": "is the stool mucoid?"
+            },
+            {
+                "id": 9.101,
+                "hausa": "amai sau nawa?",
+                "phonetic": "ah-my sow nah-wah?",
+                "eng": "episode of vomiting?"
+            },
+            {
+                "id": 9.11,
+                "hausa": "akwai jini a cikin amain?",
+                "phonetic": "ah-kwhy jee-nee ah chee-keen ah-mine?",
+                "eng": "history of hematemesis?"
+            },
+            {
+                "id": 9.12,
+                "hausa": "akwai rashin cin abinci?",
+                "phonetic": "ah-kwhy rah-sheen cheen ah-been-chee?",
+                "eng": "history of anorexia?"
+            },
+            {
+                "id": 9.13,
+                "hausa": "zawo sau nawa?",
+                "phonetic": "zah-woh sow nah-wah?",
+                "eng": "frequency of stool?"
+            },
+            {
+                "id": 9.15,
+                "hausa": "akwai ramewa?",
+                "phonetic": "ah-kwhy rah-meh-wah?",
+                "eng": "any weight loss?"
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "hausa": "Zuciya da Jini",
+        "eng": "CVS",
+        "questions": [
+            {
+                "id": 10.1,
+                "hausa": "akwai ciwon kirji?",
+                "phonetic": "ah-kwhy chee-won keer-jee?",
+                "eng": "do you have chest pain?"
+            },
+            {
+                "id": 10.2,
+                "hausa": "ciwon na zuwa hannun hagu?",
+                "phonetic": "chee-won nah zoo-wah hahn-noon hah-goo?",
+                "eng": "radiates to the left arm?"
+            },
+            {
+                "id": 10.21,
+                "hausa": "ciwon na zuwa wuya?",
+                "phonetic": "chee-won nah zoo-wah woo-yah?",
+                "eng": "radiates to the neck?"
+            },
+            {
+                "id": 10.22,
+                "hausa": "ciwon na zuwa hammata?",
+                "phonetic": "chee-won nah zoo-wah hahm-mah-tah?",
+                "eng": "radiates to the armpit?"
+            },
+            {
+                "id": 10.4,
+                "hausa": "yaushe ne ciwon kirjin ya fara?",
+                "phonetic": "yow-sheh neh chee-won keer-jeen yah fah-rah?",
+                "eng": "onset of chest pain?"
+            },
+            {
+                "id": 10.5,
+                "hausa": "ana jin zuciya na bugawa da sauri?",
+                "phonetic": "ah-nah jeen zoo-chee-yah nah boo-gah-wah dah sow-ree?",
+                "eng": "is there palpitation?"
+            },
+            {
+                "id": 10.6,
+                "hausa": "akwai wahalar numfashi?",
+                "phonetic": "ah-kwhy wah-hah-lar noom-fah-shee?",
+                "eng": "any difficulty breathing?"
+            },
+            {
+                "id": 10.8,
+                "hausa": "akwai kumburi a ƙafafu?",
+                "phonetic": "ah-kwhy koom-boo-ree ah kah-fah-foo?",
+                "eng": "any pedal edema?"
+            },
+            {
+                "id": 10.101,
+                "hausa": "akwai jin jiri?",
+                "phonetic": "ah-kwhy jeen jee-ree?",
+                "eng": "history of syncope?"
+            },
+            {
+                "id": 10.12,
+                "hausa": "ana iya kwanchiya ba pillow?",
+                "phonetic": "ah-nah ee-yah kwhahn-chee-yah bah peel-loh?",
+                "eng": "history of orthopnea?"
+            },
+            {
+                "id": 10.13,
+                "hausa": "an taɓa chewa akwai hawan jini?",
+                "phonetic": "ahn tah-bah cheh-wah ah-kwhy hah-wahn jee-nee?",
+                "eng": "history of HTN?"
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "hausa": "Jikin Fitsari da Haihuwa",
+        "eng": "UGS",
+        "questions": [
+            {
+                "id": 11.1,
+                "hausa": "akwai jin zafi yayin fitsari?",
+                "phonetic": "ah-kwhy jeen zah-fee yah-yeen feet-sah-ree?",
+                "eng": "any dysuria?"
+            },
+            {
+                "id": 11.2,
+                "hausa": "yawan fitsari ya karu?",
+                "phonetic": "yah-wahn feet-sah-ree yah kah-roo?",
+                "eng": "any frequency?"
+            },
+            {
+                "id": 11.3,
+                "hausa": "ana iya rike fitsari?",
+                "phonetic": "ah-nah ee-yah ree-keh feet-sah-ree?",
+                "eng": "any urgency?"
+            },
+            {
+                "id": 11.4,
+                "hausa": "akwai jini a cikin fitsarin?",
+                "phonetic": "ah-kwhy jee-nee ah chee-keen feet-sah-reen?",
+                "eng": "any hematuria?"
+            },
+            {
+                "id": 11.5,
+                "hausa": "meye kalar fitsari?",
+                "phonetic": "meh-yeh kah-lar feet-sah-ree?",
+                "eng": "the color of your urine?"
+            },
+            {
+                "id": 11.6,
+                "hausa": "ana sakin fitsari a wando?",
+                "phonetic": "ah-nah sah-keen feet-sah-ree ah wahn-doh?",
+                "eng": "any incontinence?"
+            },
+            {
+                "id": 11.7,
+                "hausa": "akwai ciwon gefen chiki?",
+                "phonetic": "ah-kwhy chee-won geh-fehn chee-kee?",
+                "eng": "do you have lower back pain?"
+            },
+            {
+                "id": 11.9,
+                "hausa": "wani abu na kfitowa daga jiki?",
+                "phonetic": "wah-nee ah-boo nah fee-toh-wah dah-gah jee-kee?",
+                "eng": "Any PV discharge?"
+            },
+            {
+                "id": 11.101,
+                "hausa": "akwai wani kaikayi a wajen?",
+                "phonetic": "ah-kwhy wah-nee kigh-kigh ah wah-jehn?",
+                "eng": "any PV itching?"
+            },
+            {
+                "id": 11.11,
+                "hausa": "yaushe kika fara hailar ki ta ƙarshe?",
+                "phonetic": "yow-sheh kee-kah fah-rah high-lar kee tah kar-sheh?",
+                "eng": "when was your LMP?"
+            },
+            {
+                "id": 11.12,
+                "hausa": "hailar ki tana zuwa a kai a kai?",
+                "phonetic": "high-lar kee tah-nah zoo-wah ah kigh ah kigh?",
+                "eng": "are your periods regular?"
+            },
+            {
+                "id": 11.13,
+                "hausa": "kina zubar da jini mai yawa yayin haila?",
+                "phonetic": "kee-nah zoo-bar dah jee-nee my yah-wah yah-yeen high-lah?",
+                "eng": "do you've hyper-menorrhoea?"
+            },
+            {
+                "id": 11.14,
+                "hausa": "kina jin ciwo yayin haila?",
+                "phonetic": "kee-nah jeen chee-woh yah-yeen high-lah?",
+                "eng": "do you've menorrhagia?"
+            },
+            {
+                "id": 11.18,
+                "hausa": "kina da ciki?",
+                "phonetic": "kee-nah dah chee-kee?",
+                "eng": "are you pregnant?"
+            },
+            {
+                "id": 11.19,
+                "hausa": "kin taɓa haihuwa?",
+                "phonetic": "keen tah-bah high-hoo-wah?",
+                "eng": "any previous delivery?"
+            },
+            {
+                "id": 11.201,
+                "hausa": "akwai matsalolin jima'i?",
+                "phonetic": "ah-kwhy maht-sah-loh-leen jee-mah-ee?",
+                "eng": "any sexual problems?"
+            }
+        ]
+    }
+]
