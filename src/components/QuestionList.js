@@ -1,5 +1,10 @@
 import React from 'react';
 
+const formatSentence = (str) => {
+    if (!str) return '';
+    return str.charAt(0).toUpperCase() + str.slice(1);
+};
+
 const QuestionList = ({
     questions,
     onSelectQuestion,
@@ -16,15 +21,14 @@ const QuestionList = ({
 
     return (
         <>
-            {questions.map((item, index) => {
+            {questions.map((item) => {
                 // Determine unique key based on context
                 const key = item.categoryId
                     ? `${item.categoryId}-${item.id}`
                     : item.id;
 
-                // Determine category ID to use for favoritism check
                 const categoryId = item.categoryId || currentCategoryId;
-                const isItemFavorited = isFavorited(item.id, categoryId);
+                const isItemFavorited = isFavorited ? isFavorited(item.id, categoryId) : false;
 
                 return (
                     <div
@@ -40,23 +44,37 @@ const QuestionList = ({
                         }}
                         className={`question-card ${showCategoryBadge ? 'search-result' : ''} ${item.id === activeQuestionId ? 'active' : ''}`}
                     >
-                        <span className="question-text">{item.eng}</span>
+                        {onToggleFavorite && (
+                            <button
+                                type="button"
+                                className={`favorite-btn ${isItemFavorited ? 'favorited' : ''}`}
+                                onClick={(e) => {
+                                    e.stopPropagation();
+                                    onToggleFavorite(item, categoryId);
+                                }}
+                                aria-label={isItemFavorited ? "Remove from favorites" : "Add to favorites"}
+                            >
+                                <svg
+                                    className="star-svg"
+                                    viewBox="0 0 24 24"
+                                    width="15"
+                                    height="15"
+                                    fill={isItemFavorited ? "#facc15" : "none"}
+                                    stroke={isItemFavorited ? "#facc15" : "currentColor"}
+                                    strokeWidth="2"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                >
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                            </button>
+                        )}
+
+                        <span className="question-text">{formatSentence(item.eng)}</span>
 
                         {showCategoryBadge && item.categoryName && (
                             <span className="category-badge">{item.categoryName}</span>
                         )}
-
-                        <button
-                            type="button"
-                            className={`favorite-btn ${isItemFavorited ? 'favorited' : ''}`}
-                            onClick={(e) => {
-                                e.stopPropagation();
-                                onToggleFavorite(item, categoryId);
-                            }}
-                            aria-label={isItemFavorited ? "Remove from favorites" : "Add to favorites"}
-                        >
-                            {isItemFavorited ? '⭐' : '☆'}
-                        </button>
                     </div>
                 );
             })}
