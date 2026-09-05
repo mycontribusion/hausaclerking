@@ -37,6 +37,14 @@ function HausaClerking() {
   } = useSearch(favorites, recentItems);
 
   // Handlers
+  const handleSearchChange = (value) => {
+    if (value.trim().length > 0 && answerArea !== 'Hausa text are pronounced exactly as they are written') {
+      setAnswerArea('Hausa text are pronounced exactly as they are written');
+      setPhoneticArea('');
+    }
+    setSearchQuery(value);
+  };
+
   const showHausa = (questionId, categoryId = symptomsId) => {
     // Find the question and category
     let question;
@@ -80,6 +88,8 @@ function HausaClerking() {
     setButtonArea(tab);
     setSearchQuery('');
     setActiveQuestionId(null);
+    setAnswerArea('Hausa text are pronounced exactly as they are written');
+    setPhoneticArea('');
   }
 
   // Derived Logic for passing to Buttons
@@ -101,7 +111,7 @@ function HausaClerking() {
             activeTab={buttonArea}
             onTabChange={handleTabChange}
             searchQuery={searchQuery}
-            onSearchChange={setSearchQuery}
+            onSearchChange={handleSearchChange}
             onClearSearch={() => setSearchQuery('')}
           />
 
