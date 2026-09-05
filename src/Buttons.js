@@ -47,7 +47,7 @@ function Buttons({ viewState, data, actions }) {
                             onToggleFavorite={toggleFavorite}
                             isFavorited={isFavorited}
                             activeQuestionId={activeQuestionId}
-                            showCategoryBadge={true}
+                            showCategoryBadge={false}
                             emptyMessage="No favorites yet. Tap the ☆ icon to add phrases!"
                         />
                     )}
@@ -59,7 +59,7 @@ function Buttons({ viewState, data, actions }) {
                             onToggleFavorite={toggleFavorite}
                             isFavorited={isFavorited}
                             activeQuestionId={activeQuestionId}
-                            showCategoryBadge={true}
+                            showCategoryBadge={false}
                             emptyMessage="No recent phrases yet."
                         />
                     )}
